@@ -587,12 +587,17 @@ button:focus-visible {
 
   /* ===================== start style of scrollbar ================= */
 
+  /* html::-webkit-scrollbar {
+    width: 17px;
+  } */
+
+
   body *::-webkit-scrollbar {
-    width: 7px;
+    width: 5px;
   }
 
   body *::-webkit-scrollbar-thumb {
-    @apply opacity-0 invisible rounded-full bg-gray-300 rounded-full delay-75;
+    @apply opacity-0 invisible rounded-full bg-gray-500 rounded-full delay-75;
   }
 
   body *:hover::-webkit-scrollbar-thumb {
@@ -615,6 +620,10 @@ button:focus-visible {
     visibility: visible;
     opacity: 1;
     pointer-events: visible;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
   }
 
   .ltr-dir {
@@ -648,13 +657,13 @@ button:focus-visible {
     width: 32px;
     height: 16px;
   }
-  
-  .switch input { 
+
+  .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
+
   .slider {
     position: absolute;
     cursor: pointer;
@@ -668,41 +677,41 @@ button:focus-visible {
     -moz-transition: .4s;
     -ms-transition: .4s;
     -o-transition: .4s;
-}
-  
+  }
+
   .slider:before {
     position: absolute;
     content: "";
     height: 12px;
     width: 12px;
     left: 2px;
-    bottom:0;
+    bottom: 0;
     top: 0;
     margin: auto;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
-  input:checked + .slider {
+
+  input:checked+.slider {
     background-color: #2196F3;
   }
-  
-  input:focus + .slider {
+
+  input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
   }
-  
-  input:checked + .slider:before {
+
+  input:checked+.slider:before {
     -webkit-transform: translateX(15px);
     -ms-transform: translateX(15px);
     transform: translateX(15px);
   }
-  
+
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
-  
+
   .slider.round:before {
     border-radius: 50%;
   }
