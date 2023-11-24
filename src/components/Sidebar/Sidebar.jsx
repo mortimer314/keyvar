@@ -18,7 +18,7 @@ export default function Sidebar({ collapsed, collapsedHandler }) {
       {
         (navigationType === "vertical" || navigationType === "combo") &&
 
-        <div className={`sidebar transition ease-linear fixed  bottom-0 lg:block hidden  border-x border-solid
+        <div className={`sidebar transition ease-linear fixed  bottom-0 lg:block hidden  ${language ==="fa"?"border-l":"border-r"} border-solid
                       ${theme === "dark" ?
                           ((verticalNavbarTheme === "default") ? "bg-slate-800 border-slate-700" : "bg-slate-900 border-slate-700") :
                           ((verticalNavbarTheme === "default") ? "bg-gray-50 border-gray-300" : "bg-slate-900 border-gray-700") }
