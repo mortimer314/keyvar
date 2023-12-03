@@ -41,6 +41,11 @@ export default {
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
+      }, 
+      spacing: {
+        '4.5': '1.125rem',
+        '7.5': '1.875rem',
+        '15': '3.75rem',
       }
     },
   

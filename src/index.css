@@ -597,7 +597,7 @@ button:focus-visible {
   }
 
   body *::-webkit-scrollbar-thumb {
-    @apply opacity-0 invisible rounded-full bg-gray-500 rounded-full delay-75;
+    @apply opacity-0 invisible rounded-full bg-gray-400/70 delay-75;
   }
 
   body *:hover::-webkit-scrollbar-thumb {
@@ -707,7 +707,6 @@ button:focus-visible {
     transform: translateX(15px);
   }
 
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
@@ -715,5 +714,70 @@ button:focus-visible {
   .slider.round:before {
     border-radius: 50%;
   }
+
+  /* =========== topbar-tools-content before =========*/
+  .topbar-tools-content {
+    @apply absolute top-14 m-auto w-40 bg-white h-32 -left-1 rounded-md border border-solid border-gray-400 dark:bg-slate-800;
+  }
+
+
+  .topbar-tools-content-left {
+    @apply absolute top-14 m-auto w-40 bg-white h-32 -right-1 rounded-md border border-solid border-gray-400 dark:bg-slate-800;
+
+  }
+
+
+  .topbar-tools-content-left::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: inherit;
+    border-top-left-radius: 4px;
+    rotate: 45deg;
+    top: -10px;
+    right: 13px;
+    border: 1px solid transparent;
+    @apply border-t-gray-400 border-l-gray-400 dark:border-t-slate-600 dark:border-l-slate-600;
+
+  }
+
+  .topbar-tools-content::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: inherit;
+    border-top-left-radius: 4px;
+    rotate: 45deg;
+    top: -10px;
+    left: 13px;
+    border: 1px solid transparent;
+    @apply border-t-gray-400 border-l-gray-400 dark:border-t-slate-600 dark:border-l-slate-600;
+
+  }
+
+  .topbar-tools-content-slim {
+    @apply top-7 -left-3.5;
+  }
+
+  .topbar-tools-content-slim-left {
+    @apply top-7 -right-3.5;
+  }
+
+  .topbar-tools-content-slim::before {
+    width: 14px;
+    height: 14px;
+    top: -7px;
+  }
+
+  .topbar-tools-content-slim-left::before {
+    width: 14px;
+    height: 14px;
+    top: -7px;
+  }
+
 
 }

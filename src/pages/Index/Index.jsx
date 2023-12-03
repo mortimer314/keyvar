@@ -14,7 +14,7 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 import MainContent from '../../components/MainContent/MainContent'
 
 export default function Index() {
-  const [collapsed, setCollapsed] = useState(false)
+  const [collapsed, setCollapsed] = useState(true)
   const [isShowCustimization, setIsShowCustimization] = useState(false)
 
   const [theme, setTheme] = useState(() => localStorage.theme || "dark")

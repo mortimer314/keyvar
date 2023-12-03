@@ -71,7 +71,7 @@ export default function Customize() {
             customizationInfos.sideBtn
           }
         </div>
-        <div className='animate-spin-slow text-sky-500'>
+        <div className={`animate-spin-slow text-sky-500 ${customizeContext.language != "fa"&& "sm:-mb-1.5"}`}>
           <svg className='w-6 h-6'>
             <use href="#cog-6-tooth"></use>
           </svg>

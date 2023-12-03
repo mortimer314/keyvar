@@ -5,7 +5,6 @@ const CustomizeItem = (({ title, items = [], name, onChangeHandler, mainValue })
     const [selectedOption, setSelectedOption] = useState(mainValue)
 
     const customizeContext = useContext(CustomizeContext)
-    console.log(mainValue)
     return (
         <>
             <div className={`sidebar-item font-semibold items-center 
