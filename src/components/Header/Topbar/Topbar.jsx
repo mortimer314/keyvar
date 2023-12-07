@@ -68,14 +68,14 @@ export default function Topbar() {
                 <use href='#bars-3'></use>
               </svg>
             </div>
-            <div className="flex-center gap-x-2 ">
+            <a href='#' className="flex-center gap-x-2 ">
               <div className="logo-img-wrapper ">
-                <img className={`${topbarClass.logoImg}`} src="./src/assets/images/logo1.png" alt="" />
+                <img className={`${topbarClass.logoImg}`} src="/dist/assets/images/logo1.png" alt="" />
               </div>
               <div className={`logo-title font-DanaMedium hidden sm:block ${topbarClass.logoBrand}`}>
                 {isLanguageFa ? "کیوار" : "keyvar"}
               </div>
-            </div>
+            </a>
           </div>
           <div className="middle hidden lg:block">
             <div className="topbar__search-wrapper w-[400px] shrink">
