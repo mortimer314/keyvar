@@ -61,7 +61,7 @@ export default function Customize() {
               w-fit h-fit bg-white dark:bg-slate-800 select-none 
               shadow-sm text-sm text-gray-600 dark:text-gray-300  
               border-solid border border-gray-400 
-               px-2.5 py-2 
+               px-2.5 py-2 z-20
               flex items-center justify-center gap-x-1 
               cursor-pointer rounded-md  
               `}

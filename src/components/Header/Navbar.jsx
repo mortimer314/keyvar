@@ -18,7 +18,7 @@ export default function Navbar() {
     <>
       {
         (navigationType === "dual") &&
-        <div className={`navbar  hidden lg:flex items-center justify-center transition ease-linear bg-blue-600 h-[54px] ${language === "fa" && isShowCustimization ? "pr-[17px]" : "pr-0"}`}>
+        <div className={`navbar  hidden lg:flex items-center justify-center transition ease-linear bg-blue-600 h-[54px] ${language === "fa" && isShowCustimization ? "md:pr-[17px]" : "md:pr-0"}`}>
 
           <div className="horizental__navbar-wrapper container flex-center"> horizental__navbar-wrapper</div>
         </div>

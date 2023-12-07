@@ -14,7 +14,7 @@ export default function MainContent({ collapsed }) {
     resetSetting
   } = useContext(CustomizeContext)
   return (
-    <div className={`${language === "fa" && isShowCustimization ? "pr-[1em]" : "pr-0"}`}>
+    <div className={`${language === "fa" && isShowCustimization ? "md:pr-[1em]" : "md:pr-0"}`}>
 
       <div className={`main transition ease-linear bg-orange-300 w-full overflow-y-auto 
                         

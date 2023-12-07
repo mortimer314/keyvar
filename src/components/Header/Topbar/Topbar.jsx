@@ -62,7 +62,7 @@ export default function Topbar() {
 
         <div className="topbar-content flex items-center justify-between w-full px-6 lg:px-10">
 
-          <div className={`logo-wrapper flex-center gap-x-2 ${topbarClass.logoWrapper}`}>
+          <div className={`logo-wrapper flex-center gap-x-1 sm:gap-x-2 ${topbarClass.logoWrapper}`}>
             <div className="lg:hidden">
               <svg className={`${topbarClass.menuBtn}`}>
                 <use href='#bars-3'></use>
@@ -72,7 +72,7 @@ export default function Topbar() {
               <div className="logo-img-wrapper ">
                 <img className={`${topbarClass.logoImg}`} src="./src/assets/images/logo1.png" alt="" />
               </div>
-              <div className={`logo-title font-DanaMedium ${topbarClass.logoBrand}`}>
+              <div className={`logo-title font-DanaMedium hidden sm:block ${topbarClass.logoBrand}`}>
                 {isLanguageFa ? "کیوار" : "keyvar"}
               </div>
             </div>
@@ -80,9 +80,9 @@ export default function Topbar() {
           <div className="middle hidden lg:block">
             <div className="topbar__search-wrapper w-[400px] shrink">
               {horizentalNavbarShape === "slim" ?
-                ((navigationType === "dual") ? <TopbarSearch /> : "") :
+                ((navigationType === "dual") ? <TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} isSlim={isSlim}/> : "") :
                 (navigationType === "vertical" || navigationType === "dual") ?
-                  <TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} /> : ""}
+                  <TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} isSlim={isSlim}/> : ""}
             </div>
             <div className="topbar__navbar-wrapper">
               {horizentalNavbarShape === "slim" ?
