@@ -205,7 +205,7 @@ function ToolBtnContentOfProfile(props) {
             {
                 !props.isSlim ?
                     <div className="w-10 h-10 md:w-12 md:h-12 overflow-hidden rounded-full cursor-pointer">
-                        <img className='w-full' src="/dist/assets/images/topbar-img.jpg" alt="" />
+                        <img className='w-full' src="https://mortimer314.github.io/files/src/assets/images/topbar-img.jpg" alt="" />
                     </div> :
                     <div className={`flex flex-center gap-x-1 text-xs cursor-pointer
                     ${props.isDarkTheme ?
@@ -241,7 +241,7 @@ function ToolDropdownContentProfile(props) {
             <div className="profile-card w-[290px] h-[475px] flex flex-col ">
                 <div className="pt-6 pb-4 ">
                     <div className="w-12 h-12 rounded-full overflow-hidden flex-center m-auto border border-solid border-gray-300 dark:border-gray-500">
-                        <img className='w-full h-full' src="/dist/assets/images/topbar-img.jpg" alt="" />
+                        <img className='w-full h-full' src="https://mortimer314.github.io/files/src/assets/images/topbar-img.jpg" alt="" />
                     </div>
                     <h6 className="profile-card__name text-center text-xs font-medium pt-2 pb-1 dark:text-gray-200">Mortimer</h6>
                 </div>
@@ -327,99 +327,99 @@ function ProfileCardItem({ title, svgId }) {
     )
 }
 
-function ToolDropdownContentSocialMedia(){
-    return(
+function ToolDropdownContentSocialMedia() {
+    return (
         <div className="w-[245px] h-[320px] overflow-auto  px-4 pt-4 ">
             <div className="socials-grid-cotent">
-            <div className="">
+                <div className="">
                     <a href="#" className="">
-                    <img src="https://mortimer314.github.io/keyvar/dist/assets/images/social/figma.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/figma.png" alt="" />
                         <p className=''>Figma</p>
                     </a>
                 </div>
-                
+
                 <div className="">
                     <a href="#" className="">
-                    <img src="https://mortimer314.github.io/keyvar/src/assets/images/social/twitter.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/twitter.png" alt="" />
                         <p className=''>Twitter</p>
                     </a>
                 </div>
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/gitlab.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/gitlab.png" alt="" />
                         <p className=''>Gitlab</p>
                     </a>
                 </div>
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/trello.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/trello.png" alt="" />
                         <p className=''>Trello</p>
                     </a>
                 </div>
-                
+
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/spotify.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/spotify.png" alt="" />
                         <p className=''>Spotify</p>
                     </a>
                 </div>
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/behance.png" className=' ' alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/behance.png" className=' ' alt="" />
                         <p className=''>Behance</p>
                     </a>
                 </div>
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/slack.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/slack.png" alt="" />
                         <p className=''>Slack</p>
                     </a>
                 </div>
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/pinterest.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/pinterest.png" alt="" />
                         <p className=''>Pinterest</p>
                     </a>
                 </div>
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/ln.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/ln.png" alt="" />
                         <p className=''>in</p>
                     </a>
                 </div>
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/google-photos.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/google-photos.png" alt="" />
                         <p className=''>Photos</p>
                     </a>
                 </div>
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/google-maps.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/google-maps.png" alt="" />
                         <p className=''>Maps</p>
                     </a>
                 </div>
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/google-drive.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/google-drive.png" alt="" />
                         <p className=''>Drive</p>
                     </a>
                 </div>
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/google-cloud.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/google-cloud.png" alt="" />
                         <p className=''>Cloud</p>
                     </a>
                 </div>
-                
-                
+
+
                 <div className="">
                     <a href="#" className="">
-                    <img src="/dist/assets/images/social/bitbucket.png"  alt="" />
+                        <img src="https://mortimer314.github.io/files/src/assets/images/social/bitbucket.png" alt="" />
                         <p className=''>Bitbucket</p>
                     </a>
                 </div>
-               
+
             </div>
         </div>
     )

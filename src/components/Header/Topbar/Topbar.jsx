@@ -70,7 +70,7 @@ export default function Topbar() {
             </div>
             <a href='#' className="flex-center gap-x-2 ">
               <div className="logo-img-wrapper ">
-                <img className={`${topbarClass.logoImg}`} src="/dist/assets/images/logo1.png" alt="" />
+                <img className={`${topbarClass.logoImg}`} src="https://mortimer314.github.io/files/src/assets/images/logo1.png" alt="" />
               </div>
               <div className={`logo-title font-DanaMedium hidden sm:block ${topbarClass.logoBrand}`}>
                 {isLanguageFa ? "کیوار" : "keyvar"}
