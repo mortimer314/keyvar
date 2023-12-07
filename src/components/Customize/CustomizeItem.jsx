@@ -49,7 +49,7 @@ const CustomizeItem = (({ title, items = [], name, onChangeHandler, mainValue })
                                                 htmlFor={`${item.itemId}`}>
                                                     
                                     <div className="">
-                                        <img src={`./src/assets/images/${customizeContext.theme === "dark" ? item.darkCover : item.cover}`}
+                                        <img src={`./keyvar/src/assets/images/${customizeContext.theme === "dark" ? item.darkCover : item.cover}`}
                                             className={`rounded-md shadow-inner border-2 w-full border-solid 
                                             ${(!(customizeContext.navigationType === "dual" && name === "horizental-navbar-shape") &&
                                                     !((customizeContext.navigationType === "horizental" || customizeContext.navigationType === "dual") && name === "vertical-navbar-theme")
