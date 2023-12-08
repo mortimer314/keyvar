@@ -4,13 +4,13 @@ import "./Customize.css"
 import CustomizeItem from './CustomizeItem'
 import CustomizeLanguage from './CustomizeLanguage'
 import CustomizeContext from '../../context/costomizeContext'
-
+import { data } from "../../../data"
 
 export default function Customize() {
 
   const customizeContext = useContext(CustomizeContext)
 
-  const {isShowCustimization, setIsShowCustimization} = useContext(CustomizeContext)
+  const { isShowCustimization, setIsShowCustimization } = useContext(CustomizeContext)
   const [customizationInfos, setCustomizationInfos] = useState({})
   const [customizationInfosOfItems, setCustomizationInfosOfItems] = useState()
   const [customizationInfosOfStatusTheme, setCustomizationInfosOfStatusTheme] = useState()
@@ -36,18 +36,39 @@ export default function Customize() {
 
 
   useEffect(() => {
-    fetch(`http://localhost:3000/${customizeContext.language}-customize`)
-      .then(res => res.json())
-      .then(result => {
-        setCustomizationInfos(result)
-        setCustomizationInfosOfItems(result.items)
-        setCustomizationInfosOfLanguage(result.items.language)
-        setCustomizationInfosOfStatusTheme(result.items.statusTheme)
-        setCustomizationInfosOfNavigationType(result.items.navigationType)
-        setCustomizationInfosOfVerticalNavbarTheme(result.items.verticalNavbarTheme)
-        setCustomizationInfosOfHorizentalNavbarTheme(result.items.horizentalNavbarTheme)
-        setCustomizationInfosOfHorizentalNavbarShape(result.items.horizentalNavbarShape)
-      })
+
+    /* =============== fetch data with json server ============= */
+
+    // fetch(`http://localhost:3000/${customizeContext.language}-customize`)
+    //   .then(res => res.json())
+    //   .then(result => {
+    //     setCustomizationInfos(result)
+    //     setCustomizationInfosOfItems(result.items)
+    //     setCustomizationInfosOfLanguage(result.items.language)
+    //     setCustomizationInfosOfStatusTheme(result.items.statusTheme)
+    //     setCustomizationInfosOfNavigationType(result.items.navigationType)
+    //     setCustomizationInfosOfVerticalNavbarTheme(result.items.verticalNavbarTheme)
+    //     setCustomizationInfosOfHorizentalNavbarTheme(result.items.horizentalNavbarTheme)
+    //     setCustomizationInfosOfHorizentalNavbarShape(result.items.horizentalNavbarShape)
+    //     console.log(result)
+
+    //   })
+   
+
+
+
+    /* ============= get data from local file =========== */
+    console.log(data[`${customizeContext.language}-customize`])
+    let mainData = data[`${customizeContext.language}-customize`]
+    setCustomizationInfos(mainData)
+    setCustomizationInfosOfItems(mainData.items)
+    setCustomizationInfosOfLanguage(mainData.items.language)
+    setCustomizationInfosOfStatusTheme(mainData.items.statusTheme)
+    setCustomizationInfosOfNavigationType(mainData.items.navigationType)
+    setCustomizationInfosOfVerticalNavbarTheme(mainData.items.verticalNavbarTheme)
+    setCustomizationInfosOfHorizentalNavbarTheme(mainData.items.horizentalNavbarTheme)
+    setCustomizationInfosOfHorizentalNavbarShape(mainData.items.horizentalNavbarShape)
+
   }, [customizeContext.language])
 
   return ReactDOM.createPortal(
@@ -66,12 +87,12 @@ export default function Customize() {
               cursor-pointer rounded-md  
               `}
       >
-        <div className={`font-DanaBold hidden sm:block ${customizeContext.language !== "fa" ? "mt-2":""}`}>
+        <div className={`font-DanaBold hidden sm:block ${customizeContext.language !== "fa" ? "mt-2" : ""}`}>
           {
             customizationInfos.sideBtn
           }
         </div>
-        <div className={`animate-spin-slow text-sky-500 ${customizeContext.language != "fa"&& "sm:-mb-1.5"}`}>
+        <div className={`animate-spin-slow text-sky-500 ${customizeContext.language != "fa" && "sm:-mb-1.5"}`}>
           <svg className='w-6 h-6'>
             <use href="#cog-6-tooth"></use>
           </svg>

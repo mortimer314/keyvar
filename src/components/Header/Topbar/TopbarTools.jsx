@@ -424,3 +424,80 @@ function ToolDropdownContentSocialMedia() {
         </div>
     )
 }
+
+function ToolDropdownContentNotification(){
+    return(
+        <li id='notif' className="topbar__list-item"
+
+                            >
+                                <IoMdNotificationsOutline className='topbar__list-icon' onClick={() => {
+                                    if (notifBtn) {
+                                    }
+                                    setNotifBtn(notifBtn => !notifBtn)
+                                    setToolsBtn(false)
+                                    setProfileBtn(false)
+                                }} />
+                                {notifBtn ?
+                                    <div className='topbar__list-item-menu topbar__list-item-menu--modifie-notification'>
+                                        <div className="notification-card">
+                                            <div className="notification-card__title">
+                                                <span className="notification-card__title-text">
+                                                    پیام ها
+                                                </span>
+                                                <span className="notification-card__title-tick-all">
+                                                    علامت گذاری همه به عنوان خوانده شده.
+                                                </span>
+
+                                            </div>
+                                            <ul className="notification-card__list">
+                                                {massages.map((item =>
+                                                    <>
+                                                        <li key={item.id} className={`notification-card__item ${item.readed ? "readed" : ""}`}>
+                                                            <div className={`notification-card__item-left ${!item.status ? "online" : ""}`}>
+                                                                <img src="./images/avatar.webp" alt="" className="notification-card__item-img" />
+                                                            </div>
+                                                            <div className="notification-card__item-body">
+                                                                <div className="notification-card__item-body-name">
+                                                                    {item.name}
+                                                                </div>
+                                                                <div className="notification-card__item-body-subject">
+                                                                    
+                                                                    <span>{item.textTitle}</span><span>{item.inTime}m</span>
+                                                                </div>
+                                                                <div className="notification-card__item-body-date">
+                                                                    
+                                                                    <span>{item.clock}</span>
+                                                                    <span>AM</span>
+                                                                    <span>{item.month}</span>
+                                                                    <span>{item.day}</span>
+                                                                    <span>{item.year}</span>
+
+                                                                </div>
+                                                            </div>
+                                                            <div className="notification-card__item-right">
+                                                                <label className="notification-card__item-checked" htmlFor={item.id}>
+                                                                    <TiTickOutline />
+                                                                </label>
+                                                                <input hidden id={item.id} type="checkbox" />
+                                                                <div onClick={(event) => {
+                                                                    event.currentTarget.style.display = "none"
+                                                                }}
+                                                                    className="notification-card__item-checked-massage">
+                                                                    <a className="notification-card__item-checked-link" href="#">
+                                                                        خوانده شد.
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </>
+                                                ))}
+
+                                            </ul>
+                                            <div className="notification-card__footer notification-card__title-tick-all">
+                                                تاریخچه پیام ها
+                                            </div>
+                                        </div>
+                                    </div> : ""}
+                            </li>
+    )
+}
