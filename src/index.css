@@ -814,6 +814,24 @@ button:focus-visible {
     @apply text-[11px] mt-1 tracking-wider text-black font-medium dark:text-slate-100;
   }
 
+  /*============ Tool Dropdown Content Notification online useer =============== */
 
-
+  .notification__user-img--online{
+    position: relative;
+  }
+  .notification__user-img--online::after{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    outline: 1px solid rgb(255, 255, 255);
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
 }

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
-import "./Customize.css"
+// import "./Customize.css"
 import CustomizeItem from './CustomizeItem'
 import CustomizeLanguage from './CustomizeLanguage'
 import CustomizeContext from '../../context/costomizeContext'
@@ -58,7 +58,6 @@ export default function Customize() {
 
 
     /* ============= get data from local file =========== */
-    console.log(data[`${customizeContext.language}-customize`])
     let mainData = data[`${customizeContext.language}-customize`]
     setCustomizationInfos(mainData)
     setCustomizationInfosOfItems(mainData.items)

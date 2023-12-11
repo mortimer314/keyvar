@@ -13,7 +13,7 @@ export default function TopbarTools(props) {
                 props.isSlim &&
                 <Tool {...props} isSearchBtn={true} btnContent={<ToolBtnContent {...props} iconId={"#magnifying-glass"} />} />
             }
-            <Tool {...props} dropdownContent={<ToolDropdownContent {...props} />} btnContent={<ToolBtnContent {...props} iconId={"#bell"} />} />
+            <Tool {...props} dropdownContent={<ToolDropdownContentNotification {...props} />} btnContent={<ToolBtnContent {...props} iconId={"#bell"} />} />
             <Tool {...props} dropdownContent={<ToolDropdownContentSocialMedia {...props} />} btnContent={<ToolBtnContent {...props} iconId={"#menu-grid"} />} />
             <Tool {...props} dropdownContent={<ToolDropdownContentProfile {...props} />} btnContent={<ToolBtnContentOfProfile  {...props} />} />
 
@@ -329,7 +329,7 @@ function ProfileCardItem({ title, svgId }) {
 
 function ToolDropdownContentSocialMedia() {
     return (
-        <div className="w-[245px] h-[320px] overflow-auto  px-4 pt-4 ">
+        <div className="social-media-content__wrapper w-[245px] h-[320px] overflow-auto  px-4 pt-4 ">
             <div className="socials-grid-cotent">
                 <div className="">
                     <a href="#" className="">
@@ -425,79 +425,257 @@ function ToolDropdownContentSocialMedia() {
     )
 }
 
-function ToolDropdownContentNotification(){
-    return(
-        <li id='notif' className="topbar__list-item"
+function ToolDropdownContentNotification(props) {
+    return (
+        <div id='notification' className="notification-content__wrapper w-[358px] font-Dana">
+            <div className="notification-content">
+                <div className='flex items-center justify-between px-2 h-[34px]'>
+                    <span className="text-base font-medium dark:font-normal dark:text-white">{props.isLanguageFa?"پیام ها":"Notification"}</span>
+                    <a className="text-[13px] text-blue-500 hover:text-blue-600 hover:underline tracking-wide cursor-pointer">{props.isLanguageFa?"همه پیام ها خوانده شد.":"Mark all as read"}</a>
+                </div>
+                <div className="border-solid border-y border-gray-400/90 dark:border-slate-600">
+                    <div className="min-h-fit max-h-[424px] ps-1.5  overflow-auto grid grid-cols-1 content-start
+                     divide-solid  divide-y divide-gray-300
+                    [&>*]:h-[103px] [&>*:hover]:dark:bg-slate-700/90 [&>*:hover]:bg-slate-300  [&>*]:transition-all
+                    dark:divide-slate-600">
+                        <div className="notification__item flex items-center justify-between ">
+                            <div className="notification__item-content flex items-center gap-x-3 px-1.5">
+                                <div className="notification__user-img notification__user-img--online w-8 h-8 rounded-full 
+                                 flex-center m-auto border border-solid border-gray-300 dark:border-gray-500">
+                                    <img className='w-full h-full rounded-full' src="https://mortimer314.github.io/files/src/assets/ali.jpg" alt="" />
+                                </div>
+                                <div className="notification__details space-y-1">
+                                    <div className="notification__username text-black dark:text-slate-100 font-DanaMedium text-xs ">Ali Jalil</div>
+                                    <div className="space-y-2">
+                                        <div className="notification__type text-xs  flex items-center gap-x-2">
+                                            <span className='notification__type-img '>👍</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa? "نظر شما را پسندید.":"Liked your comment."}</span>
+                                            <span className='notification__type-time  dark:text-slate-600'>20m</span>
 
-                            >
-                                <IoMdNotificationsOutline className='topbar__list-icon' onClick={() => {
-                                    if (notifBtn) {
-                                    }
-                                    setNotifBtn(notifBtn => !notifBtn)
-                                    setToolsBtn(false)
-                                    setProfileBtn(false)
-                                }} />
-                                {notifBtn ?
-                                    <div className='topbar__list-item-menu topbar__list-item-menu--modifie-notification'>
-                                        <div className="notification-card">
-                                            <div className="notification-card__title">
-                                                <span className="notification-card__title-text">
-                                                    پیام ها
-                                                </span>
-                                                <span className="notification-card__title-tick-all">
-                                                    علامت گذاری همه به عنوان خوانده شده.
-                                                </span>
-
-                                            </div>
-                                            <ul className="notification-card__list">
-                                                {massages.map((item =>
-                                                    <>
-                                                        <li key={item.id} className={`notification-card__item ${item.readed ? "readed" : ""}`}>
-                                                            <div className={`notification-card__item-left ${!item.status ? "online" : ""}`}>
-                                                                <img src="./images/avatar.webp" alt="" className="notification-card__item-img" />
-                                                            </div>
-                                                            <div className="notification-card__item-body">
-                                                                <div className="notification-card__item-body-name">
-                                                                    {item.name}
-                                                                </div>
-                                                                <div className="notification-card__item-body-subject">
-                                                                    
-                                                                    <span>{item.textTitle}</span><span>{item.inTime}m</span>
-                                                                </div>
-                                                                <div className="notification-card__item-body-date">
-                                                                    
-                                                                    <span>{item.clock}</span>
-                                                                    <span>AM</span>
-                                                                    <span>{item.month}</span>
-                                                                    <span>{item.day}</span>
-                                                                    <span>{item.year}</span>
-
-                                                                </div>
-                                                            </div>
-                                                            <div className="notification-card__item-right">
-                                                                <label className="notification-card__item-checked" htmlFor={item.id}>
-                                                                    <TiTickOutline />
-                                                                </label>
-                                                                <input hidden id={item.id} type="checkbox" />
-                                                                <div onClick={(event) => {
-                                                                    event.currentTarget.style.display = "none"
-                                                                }}
-                                                                    className="notification-card__item-checked-massage">
-                                                                    <a className="notification-card__item-checked-link" href="#">
-                                                                        خوانده شد.
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                    </>
-                                                ))}
-
-                                            </ul>
-                                            <div className="notification-card__footer notification-card__title-tick-all">
-                                                تاریخچه پیام ها
-                                            </div>
                                         </div>
-                                    </div> : ""}
-                            </li>
+                                        <div className="notification__date flex tems-center gap-x-2 text-xs text-gray-700  dark:text-slate-400">
+                                            <span className='notification__type-img flex-center'>
+                                                <svg className='w-3 h-3'>
+                                                    <use href='#clock-icon'></use>
+                                                </svg>
+                                            </span>
+                                            <span className='notification__type-text '><span className='font-bold'>9:11 AM</span> August 7,2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <MarkNotification {...props} />
+                        </div>
+                       
+                        <div className="notification__item flex items-center justify-between ">
+                            <div className="notification__item-content flex items-center gap-x-3 px-1.5">
+                                <div className="notification__user-img notification__user-img--online w-8 h-8 rounded-full 
+                                 flex-center m-auto border border-solid border-gray-300 dark:border-gray-500">
+                                    <img className='w-full h-full rounded-full' src="https://mortimer314.github.io/files/src/assets/30.webp" alt="" />
+                                </div>
+                                <div className="notification__details space-y-1">
+                                    <div className="notification__username text-black dark:text-slate-100 font-DanaMedium text-xs ">Amir Mousavi</div>
+                                    <div className="space-y-2">
+                                        <div className="notification__type text-xs  flex items-center gap-x-2">
+                                            <span className='notification__type-img '>👤</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa?"شما را در یک نظر تگ کرد.":"Tagged you in a comment."}</span>
+                                            <span className='notification__type-time  dark:text-slate-600'>30m</span>
+
+                                        </div>
+                                        <div className="notification__date flex tems-center gap-x-2 text-xs text-gray-700  dark:text-slate-400">
+                                            <span className='notification__type-img flex-center'>
+                                                <svg className='w-3 h-3'>
+                                                    <use href='#clock-icon'></use>
+                                                </svg>
+                                            </span>
+                                            <span className='notification__type-text '><span className='font-bold'>9:11 AM</span> August 7,2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <MarkNotification {...props} />
+                        </div>
+
+                        <div className="notification__item flex items-center justify-between ">
+                            <div className="notification__item-content flex items-center gap-x-3 px-1.5">
+                                <div className="notification__user-img notification__user-img--online w-8 h-8 rounded-full 
+                                 flex-center m-auto border border-solid border-gray-300 dark:border-gray-500">
+                                    <img className='w-full h-full rounded-full' src="https://mortimer314.github.io/files/src/assets/avatar.webp" alt="" />
+                                </div>
+                                <div className="notification__details space-y-1">
+                                    <div className="notification__username text-black dark:text-slate-100 font-DanaMedium text-xs ">Neda Karimi</div>
+                                    <div className="space-y-2">
+                                        <div className="notification__type text-xs  flex items-center gap-x-2">
+                                            <span className='notification__type-img '>📅</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa?"یک رویداد ایجاد کرد.":"Created an event."}</span>
+                                            <span className='notification__type-time  dark:text-slate-600'>45m</span>
+
+                                        </div>
+                                        <div className="notification__date flex tems-center gap-x-2 text-xs text-gray-700  dark:text-slate-400">
+                                            <span className='notification__type-img flex-center'>
+                                                <svg className='w-3 h-3'>
+                                                    <use href='#clock-icon'></use>
+                                                </svg>
+                                            </span>
+                                            <span className='notification__type-text '><span className='font-bold'>9:11 AM</span> August 7,2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <MarkNotification {...props} />
+                        </div>
+
+                        <div className="notification__item flex items-center justify-between ">
+                            <div className="notification__item-content flex items-center gap-x-3 px-1.5">
+                                <div className="notification__user-img notification__user-img--online w-8 h-8 rounded-full 
+                                 flex-center m-auto border border-solid border-gray-300 dark:border-gray-500">
+                                    {/* <img className='w-full h-full rounded-full' src="https://mortimer314.github.io/files/src/assets/images/topbar-img.jpg" alt="" /> */}
+                                    <span className='font-bold text-blue-700 inline-block mt-1'>Y</span>
+                                </div>
+                                <div className="notification__details space-y-1">
+                                    <div className="notification__username text-black dark:text-slate-100 font-DanaMedium text-xs ">Yasin Hoseini</div>
+                                    <div className="space-y-2">
+                                        <div className="notification__type text-xs  flex items-center gap-x-2">
+                                            <span className='notification__type-img '>💬</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa?"در یک نظر از شما نام برد.":"Mentioned you in a comment."}</span>
+                                            <span className='notification__type-time  dark:text-slate-600'>10m</span>
+
+                                        </div>
+                                        <div className="notification__date flex tems-center gap-x-2 text-xs text-gray-700  dark:text-slate-400">
+                                            <span className='notification__type-img flex-center'>
+                                                <svg className='w-3 h-3'>
+                                                    <use href='#clock-icon'></use>
+                                                </svg>
+                                            </span>
+                                            <span className='notification__type-text '><span className='font-bold'>9:11 AM</span> August 7,2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <MarkNotification {...props} />
+                        </div>
+
+                        <div className="notification__item flex items-center justify-between ">
+                            <div className="notification__item-content flex items-center gap-x-3 px-1.5">
+                                <div className="notification__user-img notification__user-img--online w-8 h-8 rounded-full 
+                                 flex-center m-auto border border-solid border-gray-300 dark:border-gray-500">
+                                    <img className='w-full h-full rounded-full' src="https://mortimer314.github.io/files/src/assets/57.webp" alt="" />
+                                </div>
+                                <div className="notification__details space-y-1">
+                                    <div className="notification__username text-black dark:text-slate-100 font-DanaMedium text-xs ">Lida Martin</div>
+                                    <div className="space-y-2">
+                                        <div className="notification__type text-xs  flex items-center gap-x-2">
+                                            <span className='notification__type-img '>💬</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa?"در یک نظر از شما نام برد.":"Mentioned you in a comment."}</span>
+                                            <span className='notification__type-time  dark:text-slate-600'>10m</span>
+
+                                        </div>
+                                        <div className="notification__date flex tems-center gap-x-2 text-xs text-gray-700  dark:text-slate-400">
+                                            <span className='notification__type-img flex-center'>
+                                                <svg className='w-3 h-3'>
+                                                    <use href='#clock-icon'></use>
+                                                </svg>
+                                            </span>
+                                            <span className='notification__type-text '><span className='font-bold'>9:11 AM</span> August 7,2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <MarkNotification {...props} />
+                        </div>
+
+                        <div className="notification__item flex items-center justify-between ">
+                            <div className="notification__item-content flex items-center gap-x-3 px-1.5">
+                                <div className="notification__user-img notification__user-img--online w-8 h-8 rounded-full 
+                                 flex-center m-auto border border-solid border-gray-300 dark:border-gray-500">
+                                    <img className='w-full h-full rounded-full' src="https://mortimer314.github.io/files/src/assets/58.webp" alt="" />
+                                </div>
+                                <div className="notification__details space-y-1">
+                                    <div className="notification__username text-black dark:text-slate-100 font-DanaMedium text-xs ">John loe</div>
+                                    <div className="space-y-2">
+                                        <div className="notification__type text-xs  flex items-center gap-x-2">
+                                            <span className='notification__type-img '>👍</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa? "نظر شما را پسندید.":"Liked your comment."}</span>
+                                            <span className='notification__type-time  dark:text-slate-600'>20m</span>
+
+                                        </div>
+                                        <div className="notification__date flex tems-center gap-x-2 text-xs text-gray-700  dark:text-slate-400">
+                                            <span className='notification__type-img flex-center'>
+                                                <svg className='w-3 h-3'>
+                                                    <use href='#clock-icon'></use>
+                                                </svg>
+                                            </span>
+                                            <span className='notification__type-text '><span className='font-bold'>9:11 AM</span> August 7,2023</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <MarkNotification {...props} />
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div className="flex-center text-xs dark:text-slate-300 h-[34px]">
+                    <a href="#" className='hover:text-blue-500 hover:underline tracking-wide'>{props.isLanguageFa?"تاریخچه پیام ها":"Notification history"}</a>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function MarkNotification(props) {
+    const [showMarkerContent, setShowMarkerContent] = useState(false)
+
+    const refBtnShowMarker = useRef(null)
+    const refIsShowMarkerContent = useRef(false)
+
+    const showMarkerContentHandler = (event) => {
+        refIsShowMarkerContent.current = !refIsShowMarkerContent.current
+        setShowMarkerContent(prevS => !prevS)
+    }
+
+    const closeMarkerContent = () => {
+        refIsShowMarkerContent.current = false
+        setShowMarkerContent(false)
+
+    }
+
+
+    const closeMarkerHandler = event => {
+        if (!refBtnShowMarker.current.contains(event.target)) {
+            closeMarkerContent()
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("click", closeMarkerHandler)
+
+        return () => {
+            window.removeEventListener("click", closeMarkerHandler)
+        }
+    }, [])
+    return (
+        <div className="relative">
+            <button
+                ref={refBtnShowMarker}
+                onClick={showMarkerContentHandler}
+                className='marker-btn flex-center m-5 w-8 h-6 text-slate-500 dark:text-gray-300 transition-all rounded-md hover:border border-solid border-slate-400/80 dark:border-slate-600' >
+                <svg className='w-3 h-3'>
+                    <use href='#etc-icon'></use>
+                </svg>
+            </button>
+
+            <div className={`${refIsShowMarkerContent.current ?
+                "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"} 
+                 absolute  m-auto -start-64 end-8 top-14 py-2 rounded-md bg-white dark:bg-slate-800 border border-solid border-gray-300 dark:border-slate-600
+                 
+                 `}>
+                <a href="#" className='flex  items-center transition-all justify-start text-sm py-1 px-3 w-full text-slate-600/90 hover:text-slate-700 dark:text-slate-300/80 hover:dark:text-slate-100 hover:bg-slate-200 hover:dark:bg-slate-600'>
+                    {props.isLanguageFa?"خوانده شد.":"Mark as unread"}
+                </a>
+            </div>
+        </div>
     )
 }

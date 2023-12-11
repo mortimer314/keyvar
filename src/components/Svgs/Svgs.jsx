@@ -82,6 +82,11 @@ export default function Svgs() {
                 <line x1="21" y1="12" x2="9" y2="12"></line>
             </symbol>
 
+            <symbol id='etc-icon' className="svg-inline--fa fa-ellipsis fs--2 text-900"focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
+                <path fill="currentColor" d="M120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200C94.93 200 120 225.1 120 256zM280 256C280 286.9 254.9 312 224 312C193.1 312 168 286.9 168 256C168 225.1 193.1 200 224 200C254.9 200 280 225.1 280 256zM328 256C328 225.1 353.1 200 384 200C414.9 200 440 225.1 440 256C440 286.9 414.9 312 384 312C353.1 312 328 286.9 328 256z"></path>
+            </symbol>
+            <svg id='clock-icon' className="svg-inline--fa fa-clock me-1"  focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" ><path fill="currentColor" d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path>
+            </svg>
         </svg>
 
     )
