@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import { useContext } from 'react'
 import CustomizeContext from '../../../context/costomizeContext'
 import TopbarSearch from './TopbarSearch'
@@ -68,21 +69,21 @@ export default function Topbar() {
                 <use href='#bars-3'></use>
               </svg>
             </div>
-            <a href='#' className="flex-center gap-x-2 ">
+            <Link to='/keyvar/' className="flex-center gap-x-2 ">
               <div className="logo-img-wrapper ">
                 <img className={`${topbarClass.logoImg}`} src="https://mortimer314.github.io/files/src/assets/images/logo1.png" alt="" />
               </div>
               <div className={`logo-title font-DanaMedium hidden sm:block ${topbarClass.logoBrand}`}>
                 {isLanguageFa ? "کیوار" : "keyvar"}
               </div>
-            </a>
+            </Link>
           </div>
           <div className="middle hidden lg:block">
             <div className="topbar__search-wrapper w-[400px] shrink">
               {horizentalNavbarShape === "slim" ?
-                ((navigationType === "dual") ? <TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} isSlim={isSlim}/> : "") :
+                ((navigationType === "dual") ? <TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} isSlim={isSlim} /> : "") :
                 (navigationType === "vertical" || navigationType === "dual") ?
-                  <TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} isSlim={isSlim}/> : ""}
+                  <TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} isSlim={isSlim} /> : ""}
             </div>
             <div className="topbar__navbar-wrapper">
               {horizentalNavbarShape === "slim" ?

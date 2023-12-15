@@ -1,15 +1,14 @@
-
+import Index from "./pages/Index/Index"
+import Svgs from "./components/Svgs/Svgs"
 import './App.css'
-import Svgs from './components/Svgs/Svgs'
-import Index from './pages/index'
-
 
 function App() {
-
   return (
-    <div className='font-dana text-base'>
-      <Svgs/>
-      <Index />
+
+    <div >
+      <Svgs />
+      <Index/>
+
     </div>
   )
 }

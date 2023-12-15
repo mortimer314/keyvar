@@ -1,7 +1,11 @@
-import Index from "./pages/index";
-
+import Test from "./components/Test/Test";
+import Ex from "./components/Test/Ex";
+import Home from "./components/Home/Home";
+import Notifications from "./components/Notifications/Notifications";
 
 const routes = [
-    { path: "/", element: <Index /> },
-    
-]
+    { path: "/keyvar/", element:<Home/> },
+    { path: "/keyvar/notifications", element:<Notifications/> }
+];
+
+export default routes;

@@ -1,5 +1,6 @@
 import React, { useCallback, useContext, useEffect, useRef, useState } from 'react'
 import CustomizeContext from '../../../context/costomizeContext'
+import { Link } from 'react-router-dom';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import TopbarSearchWrapper from './TopbarSearchWrapper';
@@ -427,7 +428,7 @@ function ToolDropdownContentSocialMedia() {
 
 function ToolDropdownContentNotification(props) {
     return (
-        <div id='notification' className="notification-content__wrapper w-[358px] font-Dana">
+        <div id='notification' className="notification-content__wrapper w-[210px] xs:w-[270px] sm:w-[358px] font-Dana">
             <div className="notification-content">
                 <div className='flex items-center justify-between px-2 h-[34px]'>
                     <span className="text-base font-medium dark:font-normal dark:text-white">{props.isLanguageFa?"پیام ها":"Notification"}</span>
@@ -618,7 +619,7 @@ function ToolDropdownContentNotification(props) {
                     </div>
                 </div>
                 <div className="flex-center text-xs dark:text-slate-300 h-[34px]">
-                    <a href="#" className='hover:text-blue-500 hover:underline tracking-wide'>{props.isLanguageFa?"تاریخچه پیام ها":"Notification history"}</a>
+                    <Link to="/keyvar/notifications" className='hover:text-blue-500 hover:underline tracking-wide'>{props.isLanguageFa?"تاریخچه پیام ها":"Notification history"}</Link>
                 </div>
             </div>
         </div>
@@ -657,7 +658,7 @@ function MarkNotification(props) {
         }
     }, [])
     return (
-        <div className="relative">
+        <div className="relative hidden sm:block">
             <button
                 ref={refBtnShowMarker}
                 onClick={showMarkerContentHandler}

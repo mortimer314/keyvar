@@ -627,11 +627,11 @@ button:focus-visible {
   }
 
   .ltr-dir {
-    direction: ltr;
+    direction: ltr !important;
   }
 
   .rtl-dir {
-    direction: rtl;
+    direction: rtl !important;
   }
 }
 
