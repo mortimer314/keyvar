@@ -112,14 +112,17 @@ export default function Index() {
       changeHorizentalNavbarTheme,
       changeHorizentalNavbarShape,
       resetSetting,
-      isShowCustimization, 
+      isShowCustimization,
       setIsShowCustimization
     }}>
-      <div className={`wrapper-content `}>
+      <div className={`wrapper-content relative `}>
         <Customize />
         <Header />
-        <Sidebar collapsed={collapsed} collapsedHandler={setCollapsed} />
-        <MainContent collapsed={collapsed} />
+        <div className={collapsed ? "h-auto" : "flex h-fit"}>
+          <Sidebar collapsed={collapsed} collapsedHandler={setCollapsed} />
+          <MainContent collapsed={collapsed} />
+        </div>
+
       </div>
     </CustomizeContext.Provider>
   )

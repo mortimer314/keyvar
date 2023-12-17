@@ -37,7 +37,7 @@ export default function Topbar() {
       topbarClass = { topbar: "h-7 lg:h-7 bg-slate-900 border-slate-700", logoWrapper: "text-white", menuBtn: "w-6 h-6", logoImg: "h-5 -mt-0.5", logoBrand: "text-lg font-bold mt-1" }
       break;
     case "slim-light-default":
-      topbarClass = { topbar: "h-7 lg:h-7 bg-gray-50 border-gray-300", logoWrapper: "text-gray-700", menuBtn: "w-6 h-6", logoImg: "h-5 -mt-0.5", logoBrand: "text-lg font-bold mt-1" }
+      topbarClass = { topbar: "h-7 lg:h-7 bg-white border-gray-300", logoWrapper: "text-gray-700", menuBtn: "w-6 h-6", logoImg: "h-5 -mt-0.5", logoBrand: "text-lg font-bold mt-1" }
       break;
     case "slim-light-darker":
       topbarClass = { topbar: " h-7 lg:h-7 bg-slate-900 border-gray-700", logoWrapper: "text-white", menuBtn: "w-6 h-6", logoImg: "h-5 -mt-0.5", logoBrand: "text-lg font-bold mt-1" }
@@ -49,7 +49,7 @@ export default function Topbar() {
       topbarClass = { topbar: "h-16 lg:h-16 bg-slate-900 border-slate-700", logoWrapper: "text-white", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
       break;
     case "thick-light-default":
-      topbarClass = { topbar: "h-16 lg:h-16 bg-gray-50 border-gray-300", logoWrapper: "text-gray-700", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
+      topbarClass = { topbar: "h-16 lg:h-16 bg-white border-gray-300", logoWrapper: "text-gray-700", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
       break;
     case "thick-light-darker":
       topbarClass = { topbar: "h-16 lg:h-16 bg-slate-900 border-gray-700", logoWrapper: "text-white", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }

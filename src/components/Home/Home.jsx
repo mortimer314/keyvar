@@ -3,9 +3,10 @@ import Ecommerce from '../Ecommerce/Ecommerce'
 
 export default function Home() {
   return (
-    <div className='home h-screen'>
-      <div className="home-content">
-
+    <div className='home h-full'>
+      <div className="home-content text-gray-500">
+ 
+      
         home
         <Ecommerce />
       </div>
