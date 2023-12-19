@@ -226,15 +226,6 @@ function ToolBtnContentOfProfile(props) {
 }
 
 
-function ToolDropdownContent(props) {
-    return (
-        <>
-            <div className="h-40 w-40 ">
-                e
-            </div>
-        </>
-    )
-}
 
 function ToolDropdownContentProfile(props) {
     return (

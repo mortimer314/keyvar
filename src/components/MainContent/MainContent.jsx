@@ -35,7 +35,7 @@ export default function MainContent({ collapsed }) {
                     ${horizentalNavbarShape === "slim" ? " pt-7" : " pt-16"}
                     ${navigationType === "dual" ? " lg:pt-[118px]" : (horizentalNavbarShape === "slim" ? " lg:pt-7" : " lg:pt-16")}
                     ${(navigationType === "vertical" || navigationType === "combo") ?
-              (language === "fa" ? (collapsed ? "px-0 lg:pr-[255px]" : "px-0 lg:pr-16") : (collapsed ? "px-0 lg:pl-[255px] " : "px-0 ")) : "p-0 "}`}>
+              (language === "fa" ? (collapsed ? "px-0 lg:pr-[255px]" : "px-0 ") : (collapsed ? "px-0 lg:pl-[255px] " : "px-0 ")) : "p-0 "}`}>
 
             <div className={`flex flex-col justify-between 
             ${!collapsed && "h-full"}

@@ -16,7 +16,7 @@ export default function MenuHeaders({title,collapsed,theme,verticalNavbarTheme})
         
         {!collapsed ? 
         (<div className={`m-auto w-[50%] border-t border-solid  ${hrClasses}`}>  </div>) :
-        ( <div className='px-2'>{title}</div>)}
+        ( <div className='px-7'>{title}</div>)}
     </div>
   )
 }
