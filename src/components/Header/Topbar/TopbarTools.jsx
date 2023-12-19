@@ -11,8 +11,9 @@ export default function TopbarTools(props) {
         <div className={`topbar-tools__content flex items-center  ${props.isSlim ? "gap-x-2 sm:gap-x-3" : "sm:gap-x-1"}`}>
             <ThemeBtn {...props} />
             {
-                props.isSlim &&
-                <Tool {...props} isSearchBtn={true} btnContent={<ToolBtnContent {...props} iconId={"#magnifying-glass"} />} />
+                ((props.navigationType === "combo" || props.navigationType === "horizental") || props.isSlim) &&
+
+            <Tool {...props} isSearchBtn={true} btnContent={<ToolBtnContent {...props} iconId={"#magnifying-glass"} />} />
             }
             <Tool {...props} dropdownContent={<ToolDropdownContentNotification {...props} />} btnContent={<ToolBtnContent {...props} iconId={"#bell"} />} />
             <Tool {...props} dropdownContent={<ToolDropdownContentSocialMedia {...props} />} btnContent={<ToolBtnContent {...props} iconId={"#menu-grid"} />} />
@@ -422,8 +423,8 @@ function ToolDropdownContentNotification(props) {
         <div id='notification' className="notification-content__wrapper w-[210px] xs:w-[270px] sm:w-[358px] font-Dana">
             <div className="notification-content">
                 <div className='flex items-center justify-between px-2 h-[34px]'>
-                    <span className="text-base font-medium dark:font-normal dark:text-white">{props.isLanguageFa?"پیام ها":"Notification"}</span>
-                    <a className="text-[13px] text-blue-500 hover:text-blue-600 hover:underline tracking-wide cursor-pointer">{props.isLanguageFa?"همه پیام ها خوانده شد.":"Mark all as read"}</a>
+                    <span className="text-base font-medium dark:font-normal dark:text-white">{props.isLanguageFa ? "پیام ها" : "Notification"}</span>
+                    <a className="text-[13px] text-blue-500 hover:text-blue-600 hover:underline tracking-wide cursor-pointer">{props.isLanguageFa ? "همه پیام ها خوانده شد." : "Mark all as read"}</a>
                 </div>
                 <div className="border-solid border-y border-gray-400/90 dark:border-slate-600">
                     <div className="min-h-fit max-h-[424px] ps-1.5  overflow-auto grid grid-cols-1 content-start
@@ -441,7 +442,7 @@ function ToolDropdownContentNotification(props) {
                                     <div className="space-y-2">
                                         <div className="notification__type text-xs  flex items-center gap-x-2">
                                             <span className='notification__type-img '>👍</span>
-                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa? "نظر شما را پسندید.":"Liked your comment."}</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa ? "نظر شما را پسندید." : "Liked your comment."}</span>
                                             <span className='notification__type-time  dark:text-slate-600'>20m</span>
 
                                         </div>
@@ -458,7 +459,7 @@ function ToolDropdownContentNotification(props) {
                             </div>
                             <MarkNotification {...props} />
                         </div>
-                       
+
                         <div className="notification__item flex items-center justify-between ">
                             <div className="notification__item-content flex items-center gap-x-3 px-1.5">
                                 <div className="notification__user-img notification__user-img--online w-8 h-8 rounded-full 
@@ -470,7 +471,7 @@ function ToolDropdownContentNotification(props) {
                                     <div className="space-y-2">
                                         <div className="notification__type text-xs  flex items-center gap-x-2">
                                             <span className='notification__type-img '>👤</span>
-                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa?"شما را در یک نظر تگ کرد.":"Tagged you in a comment."}</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa ? "شما را در یک نظر تگ کرد." : "Tagged you in a comment."}</span>
                                             <span className='notification__type-time  dark:text-slate-600'>30m</span>
 
                                         </div>
@@ -499,7 +500,7 @@ function ToolDropdownContentNotification(props) {
                                     <div className="space-y-2">
                                         <div className="notification__type text-xs  flex items-center gap-x-2">
                                             <span className='notification__type-img '>📅</span>
-                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa?"یک رویداد ایجاد کرد.":"Created an event."}</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa ? "یک رویداد ایجاد کرد." : "Created an event."}</span>
                                             <span className='notification__type-time  dark:text-slate-600'>45m</span>
 
                                         </div>
@@ -529,7 +530,7 @@ function ToolDropdownContentNotification(props) {
                                     <div className="space-y-2">
                                         <div className="notification__type text-xs  flex items-center gap-x-2">
                                             <span className='notification__type-img '>💬</span>
-                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa?"در یک نظر از شما نام برد.":"Mentioned you in a comment."}</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa ? "در یک نظر از شما نام برد." : "Mentioned you in a comment."}</span>
                                             <span className='notification__type-time  dark:text-slate-600'>10m</span>
 
                                         </div>
@@ -558,7 +559,7 @@ function ToolDropdownContentNotification(props) {
                                     <div className="space-y-2">
                                         <div className="notification__type text-xs  flex items-center gap-x-2">
                                             <span className='notification__type-img '>💬</span>
-                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa?"در یک نظر از شما نام برد.":"Mentioned you in a comment."}</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa ? "در یک نظر از شما نام برد." : "Mentioned you in a comment."}</span>
                                             <span className='notification__type-time  dark:text-slate-600'>10m</span>
 
                                         </div>
@@ -587,7 +588,7 @@ function ToolDropdownContentNotification(props) {
                                     <div className="space-y-2">
                                         <div className="notification__type text-xs  flex items-center gap-x-2">
                                             <span className='notification__type-img '>👍</span>
-                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa? "نظر شما را پسندید.":"Liked your comment."}</span>
+                                            <span className='notification__type-text  dark:text-slate-300'>{props.isLanguageFa ? "نظر شما را پسندید." : "Liked your comment."}</span>
                                             <span className='notification__type-time  dark:text-slate-600'>20m</span>
 
                                         </div>
@@ -610,7 +611,7 @@ function ToolDropdownContentNotification(props) {
                     </div>
                 </div>
                 <div className="flex-center text-xs dark:text-slate-300 h-[34px]">
-                    <Link to="/keyvar/notifications" className='hover:text-blue-500 hover:underline tracking-wide'>{props.isLanguageFa?"تاریخچه پیام ها":"Notification history"}</Link>
+                    <Link to="/keyvar/notifications" className='hover:text-blue-500 hover:underline tracking-wide'>{props.isLanguageFa ? "تاریخچه پیام ها" : "Notification history"}</Link>
                 </div>
             </div>
         </div>
@@ -665,7 +666,7 @@ function MarkNotification(props) {
                  
                  `}>
                 <a href="#" className='flex  items-center transition-all justify-start text-sm py-1 px-3 w-full text-slate-600/90 hover:text-slate-700 dark:text-slate-300/80 hover:dark:text-slate-100 hover:bg-slate-200 hover:dark:bg-slate-600'>
-                    {props.isLanguageFa?"خوانده شد.":"Mark as unread"}
+                    {props.isLanguageFa ? "خوانده شد." : "Mark as unread"}
                 </a>
             </div>
         </div>

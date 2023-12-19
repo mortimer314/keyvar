@@ -14,10 +14,10 @@ export default function SubSubMenuTitle({ href, title, isSubMenuOpen, subSubMenu
         // style={({ isActive }) => {
         //     return {
               
-        //       color: isActive  ? "aqua" : ""
+        //       color: !isActive  ? "aqua" : ""
             
         //     } }} 
-            to={href} className={` flex items-center text-sm  min-w-fit  py-1  transition-all 
+            to={href === "" ? true : href} className={` flex items-center text-sm  min-w-fit  py-1  transition-all 
         ${collapsed ? "mx-4 rounded-lg px-1":" px-5"}
         ${titleClasses}`}>
             {collapsed ?

@@ -96,9 +96,14 @@ export default function Index() {
 
 
   }, [])
+  function collapsedHandler(){
+    setCollapsed(prevS => !prevS)
+  }
 
   return (
     <CustomizeContext.Provider value={{
+      collapsed,
+      collapsedHandler,
       theme,
       language,
       changeTheme,
@@ -119,7 +124,7 @@ export default function Index() {
         <Customize />
         <Header />
         <div className={collapsed ? "h-auto" : "flex h-fit"}>
-          <Sidebar collapsed={collapsed} collapsedHandler={setCollapsed} />
+          <Sidebar/>
           <MainContent collapsed={collapsed} />
         </div>
 

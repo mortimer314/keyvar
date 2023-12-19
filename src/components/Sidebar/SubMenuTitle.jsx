@@ -19,7 +19,7 @@ export default function SubMenuTitle({ SubMenu, id, href, title, isSubMenuOpen, 
                     
                 //     };
                 //   }} 
-                  to={`${href}`} className={`flex items-center text-sm rounded-lg min-w-fit mx-4 py-1 px-1 transition-all  ${titleClasses}`}>
+                  to={href === "" ? true : href} className={`flex items-center text-sm rounded-lg min-w-fit mx-4 py-1 px-1 transition-all  ${titleClasses}`}>
                     {collapsed ?
                         (!isLnaguageFa ?
                             <div className='ms-11 w-2.5 h-2.5 flex-center'>

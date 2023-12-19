@@ -58,7 +58,7 @@ export default function TopbarSearch({ isLanguageFa, isDarkTheme, statusTopbar, 
 
 
   return (
-    <div className={`topbar__search relative flex-center w-full max-w-[400px]`}>
+    <div className={`topbar__search relative flex-center w-full m-auto max-w-[400px]`}>
       <div ref={refElem3}
         className={`topbar__input-wrapper transision ease-linear  overflow-hidden border border-solid
         relative flex-center  duration-100 w-full 

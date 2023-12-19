@@ -5,7 +5,7 @@ import CustomizeContext from '../../../context/costomizeContext'
 import TopbarSearch from './TopbarSearch'
 import TopbarTools from './TopbarTools'
 
-export default function Topbar() {
+export default function Topbar({showMobileMenuHandler}) {
   const {
     language,
     isShowCustimization,
@@ -56,6 +56,7 @@ export default function Topbar() {
       break;
   }
 
+ 
   return (
     <>
       <div className={`topbar  transition ease-linear  flex-center border-b border-solid 
@@ -64,7 +65,7 @@ export default function Topbar() {
         <div className="topbar-content flex items-center justify-between w-full px-6 lg:px-10">
 
           <div className={`logo-wrapper flex-center gap-x-1 sm:gap-x-2 ${topbarClass.logoWrapper}`}>
-            <div className="lg:hidden">
+            <div className="lg:hidden" onClick={showMobileMenuHandler}>
               <svg className={`${topbarClass.menuBtn}`}>
                 <use href='#bars-3'></use>
               </svg>
@@ -92,7 +93,7 @@ export default function Topbar() {
             </div>
           </div>
           <div className="topbor-tools">
-            <TopbarTools isLanguageFa={isLanguageFa} isSlim={isSlim} statusTopbar={statusTopbar} isDarkTheme={isDarkTheme} />
+            <TopbarTools navigationType={navigationType} isLanguageFa={isLanguageFa} isSlim={isSlim} statusTopbar={statusTopbar} isDarkTheme={isDarkTheme} />
           </div>
         </div>
       </div>

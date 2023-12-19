@@ -391,4 +391,8 @@
 a.submenu-modifire:first-child{
   color: red;
 } */
+
+.open-menu-mobile{
+  height: 100vh;
+}
 }

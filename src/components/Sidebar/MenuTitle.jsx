@@ -14,11 +14,12 @@ export default function MenuTitle({ href, title, isSubMenuOpen, isThereSubMenus,
         // style={({ isActive }) => {
         //     return {
               
-        //       color: isActive  ? "aqua" : ""
+        //       color: isActive  ? "aqua" : "red"
             
         //     };
         //   }} 
-          to={href} className={`flex items-center text-sm rounded-lg min-w-fit mx-4 py-1 px-1 transition-all  ${titleClasses}
+        //   role="link" aria-disabled="true"
+          to={href === "" ? true : href} className={`flex items-center text-sm rounded-lg min-w-fit mx-4 py-1 px-1 transition-all  ${titleClasses}
         
         `}>
             {collapsed &&

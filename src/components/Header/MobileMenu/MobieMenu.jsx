@@ -1,12 +1,11 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import CustomizeContext from '../../context/costomizeContext'
-import CollapseBtn from './CollapseBtn'
-import MenuHeaders from './MenuHeaders'
-import MenuTitle from './MenuTitle'
-import Menu from './menu'
-import MenuContent from './MenuContent'
+import MenuHeaders from '../../Sidebar/MenuHeaders'
+import MenuTitle from '../../Sidebar/MenuTitle'
+import MenuContent from '../../Sidebar/MenuContent'
+import CustomizeContext from '../../../context/costomizeContext'
 
-export default function Sidebar() {
+export default function MobieMenu() {
+       
   const [dataSidebar, setDataSidebar] = useState()
   const refArrayOfMenuTitleElems = useRef([])
   const refLastSelectedMenuTitleElems = useState(null)
@@ -50,12 +49,11 @@ export default function Sidebar() {
   return (
     <>
       {
-        (navigationType === "vertical" || navigationType === "combo") &&
+        // (navigationType === "vertical" || navigationType === "combo") &&
 
 
-        <div className={` sidebar  transition-all ease-linear lg:block hidden border-solid 
-              ${collapsed ? (horizentalNavbarShape === "slim" ? "top-7 w-[255px] h-fit fixed bottom-0 " : "top-16 w-[255px] h-fit fixed bottom-0 ") : (horizentalNavbarShape === "slim" ? "pt-7 w-16  pb-32" : "pt-16 w-16  pb-96")}
-              ${collapsed && language === "fa" ? "right-0" : "left-0"}
+        <div className={` sidebar  transition-all ease-linear  border-solid  w-full
+              ${true ? (horizentalNavbarShape === "slim" ? "top-7   bottom-0 " : "top-16    bottom-0 ") : (horizentalNavbarShape === "slim" ? "pt-7 w-16  pb-32" : "pt-16 w-16  pb-96")}
               ${language === "fa" ? "border-l" : "border-r"}
                             ${theme === "dark" ?
             ((verticalNavbarTheme === "default") ? "bg-slate-800 border-slate-700" : "bg-slate-900 border-slate-700") :
@@ -63,37 +61,37 @@ export default function Sidebar() {
                             ${language === "fa" && isShowCustimization ? "pr-[17px]" : "pr-0"}  `}
         >
 
-          <div className={`sidebar-items py-4
-           ${collapsed ? (horizentalNavbarShape === "slim" ? "h-[calc(100vh-92px)] overflow-y-auto mb-16" : "h-[calc(100vh-128px)] overflow-y-auto mb-16") : "pb-16"}`}>
+          <div className={`sidebar-items pb-4
+           `}>
 
             {
               dataSidebar ?
                 dataSidebar.map((item, index) =>
                   <div className='sidebar_item' key={item.id}>
                     {
-                      item.id !== 1 && <MenuHeaders theme={theme} verticalNavbarTheme={verticalNavbarTheme} icon={undefined} title={item.title} collapsed={collapsed} language={language} />
+                      item.id !== 1 && <MenuHeaders theme={theme} verticalNavbarTheme={verticalNavbarTheme} icon={undefined} title={item.title} collapsed={true} language={language} />
                     }
                     <div className="menus">
                       {
                         item.menus.length !== 0 &&
                         item.menus.map((menu, indexInner) =>
 
-                          <div className={collapsed ? "menu " : "menu flex-center group relative"} key={menu.id}>
+                          <div className={collapsed ? "menu " : "menu flex flex-col group relative"} key={menu.id}>
 
                             <div className={`menu-title `} ref={(element) => { refArrayOfMenuTitleElems.current[index][indexInner] = element }}
                               onClick={event => generateOpeningMenuContent(event, index, indexInner)}>
-                              <MenuTitle isLnaguageFa={isLnaguageFa} isThereSubMenus={menu.subMenus.length !== 1} isSubMenuOpen={(selectedMenu === refArrayOfMenuTitleElems.current[index][indexInner])} collapsed={collapsed} theme={theme} verticalNavbarTheme={verticalNavbarTheme} icon={menu.icon} href={menu.href} title={menu.title} />
+                              <MenuTitle isLnaguageFa={isLnaguageFa} isThereSubMenus={menu.subMenus.length !== 1} isSubMenuOpen={(selectedMenu === refArrayOfMenuTitleElems.current[index][indexInner])} collapsed={true} theme={theme} verticalNavbarTheme={verticalNavbarTheme} icon={menu.icon} href={menu.href} title={menu.title} />
                             </div>
 
                             <div className={`menu-content transition-all 
-                            ${collapsed ? "" : 'absolute  hidden -top-1 start-16 group-hover:block px-3'}
+                            ${collapsed ? "" : ''}
 
 
-                                   ${collapsed ? ((selectedMenu === refArrayOfMenuTitleElems.current[index][indexInner]) ?
+                                   ${ ((selectedMenu === refArrayOfMenuTitleElems.current[index][indexInner]) ?
                                 "max-h-[1000px] overflow-visible" :
-                                "max-h-0 overflow-hidden") : ""}
+                                "max-h-0 overflow-hidden")}
                                 `}>
-                              <MenuContent isLnaguageFa={isLnaguageFa} subMenus={menu.subMenus} collapsed={collapsed} theme={theme} verticalNavbarTheme={verticalNavbarTheme} />
+                              <MenuContent isLnaguageFa={isLnaguageFa} subMenus={menu.subMenus} collapsed={true} theme={theme} verticalNavbarTheme={verticalNavbarTheme} />
                             </div>
 
                           </div>
@@ -107,7 +105,6 @@ export default function Sidebar() {
 
           </div>
 
-          <CollapseBtn theme={theme} verticalNavbarTheme={verticalNavbarTheme} language={language} collapsed={collapsed} collapsedHandler={collapsedHandler} />
 
         </div>
 
@@ -117,4 +114,5 @@ export default function Sidebar() {
     </>
     // <div className=""></div>
   )
-}
+      }
+      
