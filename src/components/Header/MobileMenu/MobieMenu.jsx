@@ -3,7 +3,7 @@ import MenuHeaders from '../../Sidebar/MenuHeaders'
 import MenuTitle from '../../Sidebar/MenuTitle'
 import MenuContent from '../../Sidebar/MenuContent'
 import CustomizeContext from '../../../context/costomizeContext'
-
+import {data} from "./../../../../data.js"
 export default function MobieMenu() {
        
   const [dataSidebar, setDataSidebar] = useState()
@@ -26,16 +26,23 @@ export default function MobieMenu() {
   } = useContext(CustomizeContext)
 
   useEffect(() => {
-    fetch(`http://localhost:3000/${language}-menuHeaders`)
-      .then(res => res.json())
-      .then(data => {
-        setDataSidebar(data)
+    // fetch(`http://localhost:3000/${language}-menuHeaders`)
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     setDataSidebar(data)
 
-        refArrayOfMenuTitleElems.current = data.map((item, index) => {
-          let subx = item.menus.map((subItem, subIndex) => 0)
-          return subx
-        })
-      })
+    //     refArrayOfMenuTitleElems.current = data.map((item, index) => {
+    //       let subx = item.menus.map((subItem, subIndex) => 0)
+    //       return subx
+    //     })
+    //   })
+    let mainData = data[`${language}-menuHeaders`]
+    refArrayOfMenuTitleElems.current = mainData.map((item, index) => {
+            let subx = item.menus.map((subItem, subIndex) => 0)
+            return subx
+          })
+      
+          setDataSidebar(mainData)
   }, [language])
 
   function generateOpeningMenuContent(event, index, indexInner) {

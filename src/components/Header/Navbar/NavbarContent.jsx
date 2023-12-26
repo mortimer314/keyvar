@@ -3,7 +3,7 @@ import CustomizeContext from '../../../context/costomizeContext'
 import NavbarItemTitle from './NavbarItemTitle'
 import NavbarItemWrapperContent from './NavbarItemWrapperContent'
 import NavbarItemContent from './NavbarItemContent'
-import {data} from "./../../../../data"
+import {data} from "./../../../../data.js"
 export default function NavbarContent() {
 
     const [dataNavbar, setDataNavbar] = useState()
