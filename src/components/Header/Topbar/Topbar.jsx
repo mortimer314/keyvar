@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import CustomizeContext from '../../../context/costomizeContext'
 import TopbarSearch from './TopbarSearch'
 import TopbarTools from './TopbarTools'
+import NavbarContent from '../Navbar/NavbarContent'
 
 export default function Topbar({showMobileMenuHandler}) {
   const {
@@ -19,6 +20,7 @@ export default function Topbar({showMobileMenuHandler}) {
 
   const isLanguageFa = language === "fa"
   const isSlim = (horizentalNavbarShape === "slim" && navigationType !== "dual")
+  const isDual = navigationType === "dual"
   const isHorizentalThemeDefault = (horizentalNavbarTheme === "default-horizental-theme")
   const isDarkTheme = theme === "dark"
   const isFadeScroll = isLanguageFa && isShowCustimization
@@ -43,16 +45,16 @@ export default function Topbar({showMobileMenuHandler}) {
       topbarClass = { topbar: " h-7 lg:h-7 bg-slate-900 border-gray-700", logoWrapper: "text-white", menuBtn: "w-6 h-6", logoImg: "h-5 -mt-0.5", logoBrand: "text-lg font-bold mt-1" }
       break;
     case "thick-dark-default":
-      topbarClass = { topbar: "h-16 lg:h-16 bg-slate-800 border-slate-700", logoWrapper: "text-white", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
+      topbarClass = { topbar: `h-16 lg:h-16 ${isDual? "bg-slate-900":"bg-slate-800"}  border-slate-700`, logoWrapper: "text-white", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
       break;
     case "thick-dark-darker":
-      topbarClass = { topbar: "h-16 lg:h-16 bg-slate-900 border-slate-700", logoWrapper: "text-white", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
+      topbarClass = { topbar: `h-16 lg:h-16 ${isDual? "bg-slate-950":"bg-slate-900"}  border-slate-700`, logoWrapper: "text-white", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
       break;
     case "thick-light-default":
-      topbarClass = { topbar: "h-16 lg:h-16 bg-white border-gray-300", logoWrapper: "text-gray-700", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
+      topbarClass = { topbar:`h-16 lg:h-16  ${isDual? "bg-gray-100":"bg-white"} border-gray-300`, logoWrapper: "text-gray-700", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
       break;
     case "thick-light-darker":
-      topbarClass = { topbar: "h-16 lg:h-16 bg-slate-900 border-gray-700", logoWrapper: "text-white", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
+      topbarClass = { topbar: `h-16 lg:h-16 ${isDual? "bg-slate-950":"bg-slate-900"}  border-gray-700`, logoWrapper: "text-white", menuBtn: "w-7 h-7", logoImg: "h-6 -mt-0.5", logoBrand: "text-2xl mt-1.5" }
       break;
   }
 
@@ -79,18 +81,18 @@ export default function Topbar({showMobileMenuHandler}) {
               </div>
             </Link>
           </div>
-          <div className="middle hidden lg:block">
-            <div className="topbar__search-wrapper w-[400px] shrink">
+          <div className="middle hidden lg:block ">
+            
               {horizentalNavbarShape === "slim" ?
-                ((navigationType === "dual") ? <TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} isSlim={isSlim} /> : "") :
+                ((navigationType === "dual") ? <div className="topbar__search-wrapper w-[400px] shrink"><TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} isSlim={isSlim} /></div> : "") :
                 (navigationType === "vertical" || navigationType === "dual") ?
-                  <TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} isSlim={isSlim} /> : ""}
-            </div>
-            <div className="topbar__navbar-wrapper">
+                <div className="topbar__search-wrapper w-[400px] shrink"><TopbarSearch isLanguageFa={isLanguageFa} isDarkTheme={isDarkTheme} statusTopbar={statusTopbar} isSlim={isSlim} /></div> : ""}
+          
+            
               {horizentalNavbarShape === "slim" ?
-                (!(navigationType === "vertical" || navigationType === "dual") ? "topbar__navbar-wrapper" : "") :
-                (navigationType === "horizental" || navigationType === "combo") ? "horizental__navbar-wrapper" : ""}
-            </div>
+                (!(navigationType === "vertical" || navigationType === "dual") ? <NavbarContent/> : "") :
+                (navigationType === "horizental" || navigationType === "combo") ? <NavbarContent/>: ""}
+            
           </div>
           <div className="topbor-tools">
             <TopbarTools navigationType={navigationType} isLanguageFa={isLanguageFa} isSlim={isSlim} statusTopbar={statusTopbar} isDarkTheme={isDarkTheme} />

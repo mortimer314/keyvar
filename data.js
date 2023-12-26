@@ -1,394 +1,1214 @@
 let data = {
-  "fa-menuHeaders":"",
-  "en-menuHeaders":{
-    "menuHeaders":[
-      {"id":1,"title":"HOME","icon":"home-header-icon",
-      "menus":[
-          {"id":1,"title":"Home" ,"icon":"#home-icon","isNew":true,"href":"#",
-      "submenu":[
-          {"id":1,"headerTitle":"Home" ,"icon":"","isNew":false,"href":"#","subSubMenu":[]},
-          {"id":1,"title":"E commerce" ,"icon":"","isNew":false,"href":"#","subSubMenu":[]},
-          {"id":2,"title":"Project management" ,"icon":"","isNew":false,"href":"#","subSubMenu":[]},
-          {"id":3,"title":"CRM" ,"icon":"","isNew":true,"href":"#","subSubMenu":[]},
-          {"id":4,"title":"Social feed" ,"icon":"","isNew":false,"href":"#","subSubMenu":[]}]
-      }]
-  },
-      {"id":2,"title":"APPS","icon":"apps-icon",
-      "menus":[
-          {"id":1,"title":"E commerce","icon":"e-commerce-icon","isNew":false,"href":"#","subMenus":[
-              {"id":1,"href":"#","title":"Admin","isNew":false,"subSubMenu":[
-                  {"id":1,"title":"Add product","href":"#","isNew":false},
-                  {"id":2,"title":"Products","href":"#","isNew":false},
-                  {"id":3,"title":"Customers","href":"#","isNew":false},
-                  {"id":4,"title":"Customer details","href":"#","isNew":false},
-                  {"id":5,"title":"Orders","href":"#","isNew":false},
-                  {"id":6,"title":"Order details","href":"#","isNew":false},
-                  {"id":7,"title":"Refund","href":"#","isNew":false}
-              ]},
-              {"id":2,"href":"#","title":"Customer","isNew":false,"subSubMenu":[
-                  {"id":1,"title":"Homepage","href":"#","isNew":false},
-                  {"id":2,"title":"Product details","href":"#","isNew":false},
-                  {"id":3,"title":"Products filter","href":"#","isNew":false},
-                  {"id":4,"title":"Cart","href":"#","isNew":false},
-                  {"id":5,"title":"Checkout","href":"#","isNew":false},
-                  {"id":6,"title":"Shipping info","href":"#","isNew":false},
-                  {"id":7,"title":"Profile","href":"#","isNew":false},
-                  {"id":8,"title":"Favourite store","href":"#","isNew":false},
-                  {"id":9,"title":"Wishlist","href":"#","isNew":false},
-                  {"id":10,"title":"Order tracking","href":"#","isNew":false},
-                  {"id":11,"title":"Invoice","href":"#","isNew":false}
-              ]}
-          ]},
-          {"id":2,"title":"CRM","icon":"crm-icon","isNew":true,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Analytics","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":false,"title":"Deals","subSubMenu":[]},
-              {"id":3,"href":"#","isNew":false,"title":"Deals details","subSubMenu":[]},
-              {"id":4,"href":"#","isNew":false,"title":"Leads","subSubMenu":[]},
-              {"id":5,"href":"#","isNew":false,"title":"Leads details","subSubMenu":[]},
-              {"id":6,"href":"#","isNew":false,"title":"Reports","subSubMenu":[]},
-              {"id":7,"href":"#","isNew":true,"title":"Reports details","subSubMenu":[]},
-              {"id":8,"href":"#","isNew":false,"title":"Add contact","subSubMenu":[]}
-          ]},
-          {"id":3,"title":"Project management","icon":"project-management-icon","isNew":false,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Create new","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":false,"title":"Project list view","subSubMenu":[]},
-              {"id":3,"href":"#","isNew":false,"title":"Project card view","subSubMenu":[]},
-              {"id":4,"href":"#","isNew":false,"title":"Project board view","subSubMenu":[]},
-              {"id":5,"href":"#","isNew":false,"title":"Todo list","subSubMenu":[]},
-              {"id":6,"href":"#","isNew":false,"title":"Project details","subSubMenu":[]}
-          ]},
-          {"id":4,"title":"Chat","icon":"chat-icon","isNew":false,"href":"#","subMenus":[]},
-          {"id":5,"title":"Email","icon":"email-icon","isNew":false,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Inbox","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":false,"title":"Email detail","subSubMenu":[]},
-              {"id":3,"href":"#","isNew":false,"title":"Compose","subSubMenu":[]}
-          ]},
-          {"id":6,"title":"Events","icon":"events-icon","isNew":false,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Create an event","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":false,"title":"Event detail","subSubMenu":[]}
-          ]},
-          {"id":7,"title":"Kanban","icon":"kanban-icon","isNew":true,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Kanban","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":true,"title":"Boards","subSubMenu":[]},
-              {"id":3,"href":"#","isNew":false,"title":"Create board","subSubMenu":[]}
-          ]},
-          {"id":8,"title":"Social","icon":"social-icon","isNew":false,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Profile","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":false,"title":"Setting","subSubMenu":[]}
-          ]},
-          {"id":9,"title":"Calender","icon":"calender-icon","isNew":false,"href":"#","subMenus":[]}
-      ]},
-      {"id":3,"title":"PAGES","icon":"icon",
-      "menus":[
-          {"id":1,"title":"Starter","icon":"starter-icon","isNew":false,"href":"#","subMenus":[]},
-          {"id":2,"title":"Faq","icon":"faq-icon","isNew":true,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Faq accordian","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":true,"title":"Faq tab","subSubMenu":[]}
-          ]},
-          {"id":3,"title":"Landing","icon":"landing-icon","isNew":true,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Default","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":true,"title":"Alternat","subSubMenu":[]}
-          ]},
-          {"id":4,"title":"Pricing","icon":"pricing-icon","isNew":false,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Pricing column","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":false,"title":"Pricing grid","subSubMenu":[]}
-          ]},
-          {"id":5,"title":"Notifications","icon":"notifications-icon","isNew":false,"href":"#","subMenus":[]},
-          {"id":6,"title":"Members","icon":"members-icon","isNew":false,"href":"#","subMenus":[]},
-          {"id":7,"title":"Timeline","icon":"timeline-icon","isNew":false,"href":"#","subMenus":[]},
-          {"id":8,"title":"Errors","icon":"errors-icon","isNew":true,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"404","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":true,"title":"403","subSubMenu":[]},
-              {"id":3,"href":"#","isNew":false,"title":"500","subSubMenu":[]}
-          ]},
-          {"id":9,"title":"Authentication","icon":"authentication-icon","isNew":true,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":true,"title":"Simple","subSubMenu":[
-                  {"id":1,"title":"Sign in","href":"#","isNew":false},
-                  {"id":2,"title":"Sign up","href":"#","isNew":false},
-                  {"id":3,"title":"Sign out","href":"#","isNew":false},
-                  {"id":4,"title":"Forgot password","href":"#","isNew":false},
-                  {"id":5,"title":"Rest password","href":"#","isNew":false},
-                  {"id":6,"title":"Lock screen","href":"#","isNew":false},
-                  {"id":7,"title":"2FA","href":"#","isNew":true}
-              ]},
-              {"id":2,"href":"#","isNew":true,"title":"Split","subSubMenu":[
-                  {"id":1,"title":"Sign in","href":"#","isNew":false},
-                  {"id":2,"title":"Sign up","href":"#","isNew":false},
-                  {"id":3,"title":"Sign out","href":"#","isNew":false},
-                  {"id":4,"title":"Forgot password","href":"#","isNew":false},
-                  {"id":5,"title":"Rest password","href":"#","isNew":false},
-                  {"id":6,"title":"Lock screen","href":"#","isNew":false},
-                  {"id":7,"title":"2FA","href":"#","isNew":true}
-              ]},
-              {"id":3,"href":"#","isNew":true,"title":"Card","subSubMenu":[
-                  {"id":1,"title":"Sign in","href":"#","isNew":false},
-                  {"id":2,"title":"Sign up","href":"#","isNew":false},
-                  {"id":3,"title":"Sign out","href":"#","isNew":false},
-                  {"id":4,"title":"Forgot password","href":"#","isNew":false},
-                  {"id":5,"title":"Rest password","href":"#","isNew":false},
-                  {"id":6,"title":"Lock screen","href":"#","isNew":false},
-                  {"id":7,"title":"2FA","href":"#","isNew":true}
-              ]}
-          ]},
-          {"id":10,"title":"Layout","icon":"layout-icon","isNew":false,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Vertical sidenav","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":false,"title":"Dark mode","subSubMenu":[]},
-              {"id":3,"href":"#","isNew":false,"title":"Sidenav collaps","subSubMenu":[]},
-              {"id":4,"href":"#","isNew":false,"title":"Darknav","subSubMenu":[]},
-              {"id":5,"href":"#","isNew":false,"title":"Topnav slim","subSubMenu":[]},
-              {"id":6,"href":"#","isNew":false,"title":"Navbar top slim","subSubMenu":[]},
-              {"id":7,"href":"#","isNew":false,"title":"Combo nav","subSubMenu":[]},
-              {"id":8,"href":"#","isNew":false,"title":"Combo nav slim","subSubMenu":[]},
-              {"id":9,"href":"#","isNew":false,"title":"Dual nav","subSubMenu":[]}
-          ]}
-      ]},
-      {"id":4,"title":"MODULES","icon":"icon",
-      "menus":[
-          {"id":1,"title":"Forms","icon":"forms-icon","isNew":false,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Basic","subSubMenu":[
-                  {"id":1,"title":"Form control","href":"#","isNew":false},
-                  {"id":2,"title":"Input group","href":"#","isNew":false},
-                  {"id":3,"title":"Sign out","href":"#","isNew":false},
-                  {"id":4,"title":"Select","href":"#","isNew":false},
-                  {"id":5,"title":"Checks","href":"#","isNew":false},
-                  {"id":6,"title":"Range","href":"#","isNew":false},
-                  {"id":7,"title":"Layout","href":"#","isNew":false}
-              ]},
-              {"id":2,"href":"#","isNew":false,"title":"Advance","subSubMenu":[
-                   {"id":1,"title":"Advance select","href":"#","isNew":false},
-                  {"id":2,"title":"Date picker","href":"#","isNew":false},
-                  {"id":3,"title":"Editor","href":"#","isNew":false},
-                  {"id":4,"title":"File uploader","href":"#","isNew":false},
-                  {"id":5,"title":"Rating","href":"#","isNew":false},
-                  {"id":6,"title":"Emoji button","href":"#","isNew":false}
-              ]},
-              {"id":3,"href":"#","isNew":false,"title":"Validation","subSubMenu":[]},
-              {"id":4,"href":"#","isNew":false,"title":"Wisard","subSubMenu":[]}
-          ]},
-          {"id":2,"title":"Icons","icon":"icons-icon","isNew":false,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Feather","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":false,"title":"Font awesome","subSubMenu":[]},
-              {"id":3,"href":"#","isNew":false,"title":"Unicons","subSubMenu":[]}
-          ]},
-          {"id":3,"title":"Tables","icon":"tables-icon","isNew":true,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Basic tables","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":false,"title":"Advance tables","subSubMenu":[]},
-              {"id":3,"href":"#","isNew":false,"title":"Bulk Select","subSubMenu":[]}
-          ]},
-          {"id":4,"title":"Echarts","icon":"echarts-icon","isNew":false,"href":"#","subMenus":[
-              {"id":1,"href":"#","isNew":false,"title":"Line charts","subSubMenu":[]},
-              {"id":2,"href":"#","isNew":false,"title":"Bar charts","subSubMenu":[]},
-              {"id":3,"href":"#","isNew":false,"title":"Candlestick charts","subSubMenu":[]},
-              {"id":4,"href":"#","isNew":false,"title":"Geo map","subSubMenu":[]},
-              {"id":5,"href":"#","isNew":false,"title":"Scotter charts","subSubMenu":[]},
-              {"id":6,"href":"#","isNew":false,"title":"Pie charts","subSubMenu":[]},
-              {"id":7,"href":"#","isNew":false,"title":"Gauge chart","subSubMenu":[]},
-              {"id":8,"href":"#","isNew":false,"title":"Radar charts","subSubMenu":[]},
-              {"id":9,"href":"#","isNew":false,"title":"Heatmap charts","subSubMenu":[]},
-              {"id":10,"href":"#","isNew":false,"title":"How to use","subSubMenu":[]}
-          ]},
-          {"id":5,"title":"Components","icon":"components-icon","isNew":false,"href":"#","subMenus":[]},
-          {"id":6,"title":"Utilities","icon":"utilities-icon","isNew":false,"href":"#","subMenus":[]},
-          {"id":7,"title":"Multi level","icon":"multi-level-icon","isNew":false,"href":"#","subMenus":[]}
-          
-      ]},
-      {"id":5,"title":"DOCUMENTATION","icon":"icon",
-      "menus":[]}
-  ]
-  },
-  "menuHeaders":[
+  "en-menuHeaders":[
     {"id":1,"title":"HOME","icon":"home-header-icon",
     "menus":[
-        {"id":1,"title":"Home" ,"icon":"#home-icon","isNew":true,"href":"#",
-    "submenu":[
-        {"id":1,"headerTitle":"Home" ,"icon":"","isNew":false,"href":"#","subSubMenu":[]},
-        {"id":1,"title":"E commerce" ,"icon":"","isNew":false,"href":"#","subSubMenu":[]},
-        {"id":2,"title":"Project management" ,"icon":"","isNew":false,"href":"#","subSubMenu":[]},
-        {"id":3,"title":"CRM" ,"icon":"","isNew":true,"href":"#","subSubMenu":[]},
-        {"id":4,"title":"Social feed" ,"icon":"","isNew":false,"href":"#","subSubMenu":[]}]
+        {"id":1,"title":"Home" ,"icon":"#circle-chart","isNew":true,"href":"/keyvar/",
+    "subMenus":[
+        {"id":1,"title":"Home" ,"icon":"","isNew":false,"href":"/keyvar/","subSubMenus":[]},
+        {"id":2,"title":"E commerce" ,"icon":"","isNew":false,"href":"/keyvar/","subSubMenus":[]},
+        {"id":3,"title":"Project management" ,"icon":"","isNew":false,"href":"/keyvar/project-management","subSubMenus":[]},
+        {"id":4,"title":"CRM" ,"icon":"","isNew":true,"href":"/keyvar/crm","subSubMenus":[]},
+        {"id":5,"title":"Social feed" ,"icon":"","isNew":false,"href":"/keyvar/social-feed","subSubMenus":[]}]
     }]
 },
     {"id":2,"title":"APPS","icon":"apps-icon",
     "menus":[
-        {"id":1,"title":"E commerce","icon":"e-commerce-icon","isNew":false,"href":"#","subMenus":[
-            {"id":1,"href":"#","title":"Admin","isNew":false,"subSubMenu":[
-                {"id":1,"title":"Add product","href":"#","isNew":false},
-                {"id":2,"title":"Products","href":"#","isNew":false},
-                {"id":3,"title":"Customers","href":"#","isNew":false},
-                {"id":4,"title":"Customer details","href":"#","isNew":false},
-                {"id":5,"title":"Orders","href":"#","isNew":false},
-                {"id":6,"title":"Order details","href":"#","isNew":false},
-                {"id":7,"title":"Refund","href":"#","isNew":false}
+        {"id":1,"title":"E commerce","icon":"#e-commerce-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"title":"E commerce" ,"isNew":false,"href":"","subSubMenus":[]},
+
+            {"id":2,"href":"","title":"Admin","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Add product","href":"","isNew":false},
+                {"id":2,"title":"Products","href":"","isNew":false},
+                {"id":3,"title":"Customers","href":"","isNew":false},
+                {"id":4,"title":"Customer details","href":"","isNew":false},
+                {"id":5,"title":"Orders","href":"","isNew":false},
+                {"id":6,"title":"Order details","href":"","isNew":false},
+                {"id":7,"title":"Refund","href":"","isNew":false}
             ]},
-            {"id":2,"href":"#","title":"Customer","isNew":false,"subSubMenu":[
-                {"id":1,"title":"Homepage","href":"#","isNew":false},
-                {"id":2,"title":"Product details","href":"#","isNew":false},
-                {"id":3,"title":"Products filter","href":"#","isNew":false},
-                {"id":4,"title":"Cart","href":"#","isNew":false},
-                {"id":5,"title":"Checkout","href":"#","isNew":false},
-                {"id":6,"title":"Shipping info","href":"#","isNew":false},
-                {"id":7,"title":"Profile","href":"#","isNew":false},
-                {"id":8,"title":"Favourite store","href":"#","isNew":false},
-                {"id":9,"title":"Wishlist","href":"#","isNew":false},
-                {"id":10,"title":"Order tracking","href":"#","isNew":false},
-                {"id":11,"title":"Invoice","href":"#","isNew":false}
+            {"id":3,"href":"","title":"Customer","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Homepage","href":"","isNew":false},
+                {"id":2,"title":"Product details","href":"","isNew":false},
+                {"id":3,"title":"Products filter","href":"","isNew":false},
+                {"id":4,"title":"Cart","href":"","isNew":false},
+                {"id":5,"title":"Checkout","href":"","isNew":false},
+                {"id":6,"title":"Shipping info","href":"","isNew":false},
+                {"id":7,"title":"Profile","href":"","isNew":false},
+                {"id":8,"title":"Favourite store","href":"","isNew":false},
+                {"id":9,"title":"Wishlist","href":"","isNew":false},
+                {"id":10,"title":"Order tracking","href":"","isNew":false},
+                {"id":11,"title":"Invoice","href":"","isNew":false}
             ]}
         ]},
-        {"id":2,"title":"CRM","icon":"crm-icon","isNew":true,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Analytics","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":false,"title":"Deals","subSubMenu":[]},
-            {"id":3,"href":"#","isNew":false,"title":"Deals details","subSubMenu":[]},
-            {"id":4,"href":"#","isNew":false,"title":"Leads","subSubMenu":[]},
-            {"id":5,"href":"#","isNew":false,"title":"Leads details","subSubMenu":[]},
-            {"id":6,"href":"#","isNew":false,"title":"Reports","subSubMenu":[]},
-            {"id":7,"href":"#","isNew":true,"title":"Reports details","subSubMenu":[]},
-            {"id":8,"href":"#","isNew":false,"title":"Add contact","subSubMenu":[]}
+        {"id":2,"title":"CRM","icon":"#crm-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"title":"CRM" ,"isNew":false,"href":"","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Analytics","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Deals","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Deals details","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Leads","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Leads details","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Reports","subSubMenus":[]},
+            {"id":8,"href":"","isNew":true,"title":"Reports details","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Add contact","subSubMenus":[]}
         ]},
-        {"id":3,"title":"Project management","icon":"project-management-icon","isNew":false,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Create new","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":false,"title":"Project list view","subSubMenu":[]},
-            {"id":3,"href":"#","isNew":false,"title":"Project card view","subSubMenu":[]},
-            {"id":4,"href":"#","isNew":false,"title":"Project board view","subSubMenu":[]},
-            {"id":5,"href":"#","isNew":false,"title":"Todo list","subSubMenu":[]},
-            {"id":6,"href":"#","isNew":false,"title":"Project details","subSubMenu":[]}
+        {"id":3,"title":"Project management","icon":"#project-management-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Project management","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create new","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Project list view","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Project card view","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Project board view","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Todo list","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Project details","subSubMenus":[]}
         ]},
-        {"id":4,"title":"Chat","icon":"chat-icon","isNew":false,"href":"#","subMenus":[]},
-        {"id":5,"title":"Email","icon":"email-icon","isNew":false,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Inbox","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":false,"title":"Email detail","subSubMenu":[]},
-            {"id":3,"href":"#","isNew":false,"title":"Compose","subSubMenu":[]}
+        {"id":4,"title":"Chat","icon":"#chat-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Chat","subSubMenus":[]}
         ]},
-        {"id":6,"title":"Events","icon":"events-icon","isNew":false,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Create an event","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":false,"title":"Event detail","subSubMenu":[]}
+        {"id":5,"title":"Email","icon":"#email-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Email","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Inbox","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Email detail","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Compose","subSubMenus":[]}
         ]},
-        {"id":7,"title":"Kanban","icon":"kanban-icon","isNew":true,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Kanban","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":true,"title":"Boards","subSubMenu":[]},
-            {"id":3,"href":"#","isNew":false,"title":"Create board","subSubMenu":[]}
+        {"id":6,"title":"Events","icon":"#events-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Events","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create an event","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Event detail","subSubMenus":[]}
         ]},
-        {"id":8,"title":"Social","icon":"social-icon","isNew":false,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Profile","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":false,"title":"Setting","subSubMenu":[]}
+        {"id":7,"title":"Kanban","icon":"#kanban-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Kanban","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Kanban","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Boards","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Create board","subSubMenus":[]}
         ]},
-        {"id":9,"title":"Calender","icon":"calender-icon","isNew":false,"href":"#","subMenus":[]}
-    ]},
-    {"id":3,"title":"PAGES","icon":"icon",
-    "menus":[
-        {"id":1,"title":"Starter","icon":"starter-icon","isNew":false,"href":"#","subMenus":[]},
-        {"id":2,"title":"Faq","icon":"faq-icon","isNew":true,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Faq accordian","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":true,"title":"Faq tab","subSubMenu":[]}
+        {"id":8,"title":"Social","icon":"#social-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Social","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Profile","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Setting","subSubMenus":[]}
         ]},
-        {"id":3,"title":"Landing","icon":"landing-icon","isNew":true,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Default","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":true,"title":"Alternat","subSubMenu":[]}
-        ]},
-        {"id":4,"title":"Pricing","icon":"pricing-icon","isNew":false,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Pricing column","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":false,"title":"Pricing grid","subSubMenu":[]}
-        ]},
-        {"id":5,"title":"Notifications","icon":"notifications-icon","isNew":false,"href":"#","subMenus":[]},
-        {"id":6,"title":"Members","icon":"members-icon","isNew":false,"href":"#","subMenus":[]},
-        {"id":7,"title":"Timeline","icon":"timeline-icon","isNew":false,"href":"#","subMenus":[]},
-        {"id":8,"title":"Errors","icon":"errors-icon","isNew":true,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"404","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":true,"title":"403","subSubMenu":[]},
-            {"id":3,"href":"#","isNew":false,"title":"500","subSubMenu":[]}
-        ]},
-        {"id":9,"title":"Authentication","icon":"authentication-icon","isNew":true,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":true,"title":"Simple","subSubMenu":[
-                {"id":1,"title":"Sign in","href":"#","isNew":false},
-                {"id":2,"title":"Sign up","href":"#","isNew":false},
-                {"id":3,"title":"Sign out","href":"#","isNew":false},
-                {"id":4,"title":"Forgot password","href":"#","isNew":false},
-                {"id":5,"title":"Rest password","href":"#","isNew":false},
-                {"id":6,"title":"Lock screen","href":"#","isNew":false},
-                {"id":7,"title":"2FA","href":"#","isNew":true}
-            ]},
-            {"id":2,"href":"#","isNew":true,"title":"Split","subSubMenu":[
-                {"id":1,"title":"Sign in","href":"#","isNew":false},
-                {"id":2,"title":"Sign up","href":"#","isNew":false},
-                {"id":3,"title":"Sign out","href":"#","isNew":false},
-                {"id":4,"title":"Forgot password","href":"#","isNew":false},
-                {"id":5,"title":"Rest password","href":"#","isNew":false},
-                {"id":6,"title":"Lock screen","href":"#","isNew":false},
-                {"id":7,"title":"2FA","href":"#","isNew":true}
-            ]},
-            {"id":3,"href":"#","isNew":true,"title":"Card","subSubMenu":[
-                {"id":1,"title":"Sign in","href":"#","isNew":false},
-                {"id":2,"title":"Sign up","href":"#","isNew":false},
-                {"id":3,"title":"Sign out","href":"#","isNew":false},
-                {"id":4,"title":"Forgot password","href":"#","isNew":false},
-                {"id":5,"title":"Rest password","href":"#","isNew":false},
-                {"id":6,"title":"Lock screen","href":"#","isNew":false},
-                {"id":7,"title":"2FA","href":"#","isNew":true}
-            ]}
-        ]},
-        {"id":10,"title":"Layout","icon":"layout-icon","isNew":false,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Vertical sidenav","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":false,"title":"Dark mode","subSubMenu":[]},
-            {"id":3,"href":"#","isNew":false,"title":"Sidenav collaps","subSubMenu":[]},
-            {"id":4,"href":"#","isNew":false,"title":"Darknav","subSubMenu":[]},
-            {"id":5,"href":"#","isNew":false,"title":"Topnav slim","subSubMenu":[]},
-            {"id":6,"href":"#","isNew":false,"title":"Navbar top slim","subSubMenu":[]},
-            {"id":7,"href":"#","isNew":false,"title":"Combo nav","subSubMenu":[]},
-            {"id":8,"href":"#","isNew":false,"title":"Combo nav slim","subSubMenu":[]},
-            {"id":9,"href":"#","isNew":false,"title":"Dual nav","subSubMenu":[]}
+        {"id":9,"title":"Calender","icon":"#calender-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Calender","subSubMenus":[]}
         ]}
     ]},
-    {"id":4,"title":"MODULES","icon":"icon",
+    {"id":3,"title":"PAGES","icon":"pages-icon",
     "menus":[
-        {"id":1,"title":"Forms","icon":"forms-icon","isNew":false,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Basic","subSubMenu":[
-                {"id":1,"title":"Form control","href":"#","isNew":false},
-                {"id":2,"title":"Input group","href":"#","isNew":false},
-                {"id":3,"title":"Sign out","href":"#","isNew":false},
-                {"id":4,"title":"Select","href":"#","isNew":false},
-                {"id":5,"title":"Checks","href":"#","isNew":false},
-                {"id":6,"title":"Range","href":"#","isNew":false},
-                {"id":7,"title":"Layout","href":"#","isNew":false}
+        {"id":1,"title":"Starter","icon":"#starter-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Starter","subSubMenus":[]}
+        ]},
+        {"id":2,"title":"Faq","icon":"#faq-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Faq","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Faq accordian","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Faq tab","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"Landing","icon":"#language-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Landing","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Default","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Alternat","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"Pricing","icon":"#pricing-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Pricing","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Pricing column","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Pricing grid","subSubMenus":[]}
+        ]},
+        {"id":5,"title":"Notifications","icon":"#notifications-icon","isNew":false,"href":"/keyvar/notifications","subMenus":[
+            {"id":1,"href":"/keyvar/notifications","isNew":false,"title":"Notifications","subSubMenus":[]}
+        ]},
+        {"id":6,"title":"Members","icon":"#members-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Members","subSubMenus":[]}
+        ]},
+        {"id":7,"title":"Timeline","icon":"#timeline-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Timeline","subSubMenus":[]}
+        ]},
+        {"id":8,"title":"Errors","icon":"#errors-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Errors","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"404","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"403","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"500","subSubMenus":[]}
+        ]},
+        {"id":9,"title":"Authentication","icon":"#lock-closed","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Authentication","subSubMenus":[]},
+
+            {"id":2,"href":"","isNew":true,"title":"Simple","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
             ]},
-            {"id":2,"href":"#","isNew":false,"title":"Advance","subSubMenu":[
-                 {"id":1,"title":"Advance select","href":"#","isNew":false},
-                {"id":2,"title":"Date picker","href":"#","isNew":false},
-                {"id":3,"title":"Editor","href":"#","isNew":false},
-                {"id":4,"title":"File uploader","href":"#","isNew":false},
-                {"id":5,"title":"Rating","href":"#","isNew":false},
-                {"id":6,"title":"Emoji button","href":"#","isNew":false}
+            {"id":3,"href":"","isNew":true,"title":"Split","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
             ]},
-            {"id":3,"href":"#","isNew":false,"title":"Validation","subSubMenu":[]},
-            {"id":4,"href":"#","isNew":false,"title":"Wisard","subSubMenu":[]}
+            {"id":4,"href":"","isNew":true,"title":"Card","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
+            ]}
         ]},
-        {"id":2,"title":"Icons","icon":"icons-icon","isNew":false,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Feather","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":false,"title":"Font awesome","subSubMenu":[]},
-            {"id":3,"href":"#","isNew":false,"title":"Unicons","subSubMenu":[]}
+        {"id":10,"title":"Layout","icon":"#layout-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Layout","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Vertical sidenav","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Dark mode","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Sidenav collaps","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Darknav","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Topnav slim","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Navbar top slim","subSubMenus":[]},
+            {"id":8,"href":"","isNew":false,"title":"Combo nav","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Combo nav slim","subSubMenus":[]},
+            {"id":10,"href":"","isNew":false,"title":"Dual nav","subSubMenus":[]}
+        ]}
+    ]},
+    {"id":4,"title":"MODULES","icon":"modules-icon",
+    "menus":[
+        {"id":1,"title":"Forms","icon":"#forms-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Forms","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Basic","subSubMenus":[
+                {"id":1,"title":"Form control","href":"","isNew":false},
+                {"id":2,"title":"Input group","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Select","href":"","isNew":false},
+                {"id":5,"title":"Checks","href":"","isNew":false},
+                {"id":6,"title":"Range","href":"","isNew":false},
+                {"id":7,"title":"Layout","href":"","isNew":false}
+            ]},
+            {"id":3,"href":"","isNew":false,"title":"Advance","subSubMenus":[
+                 {"id":1,"title":"Advance select","href":"","isNew":false},
+                {"id":2,"title":"Date picker","href":"","isNew":false},
+                {"id":3,"title":"Editor","href":"","isNew":false},
+                {"id":4,"title":"File uploader","href":"","isNew":false},
+                {"id":5,"title":"Rating","href":"","isNew":false},
+                {"id":6,"title":"Emoji button","href":"","isNew":false}
+            ]},
+            {"id":4,"href":"","isNew":false,"title":"Validation","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Wisard","subSubMenus":[]}
         ]},
-        {"id":3,"title":"Tables","icon":"tables-icon","isNew":true,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Basic tables","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":false,"title":"Advance tables","subSubMenu":[]},
-            {"id":3,"href":"#","isNew":false,"title":"Bulk Select","subSubMenu":[]}
+        {"id":2,"title":"Icons","icon":"#icons-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Icons","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Feather","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Font awesome","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Unicons","subSubMenus":[]}
         ]},
-        {"id":4,"title":"Echarts","icon":"echarts-icon","isNew":false,"href":"#","subMenus":[
-            {"id":1,"href":"#","isNew":false,"title":"Line charts","subSubMenu":[]},
-            {"id":2,"href":"#","isNew":false,"title":"Bar charts","subSubMenu":[]},
-            {"id":3,"href":"#","isNew":false,"title":"Candlestick charts","subSubMenu":[]},
-            {"id":4,"href":"#","isNew":false,"title":"Geo map","subSubMenu":[]},
-            {"id":5,"href":"#","isNew":false,"title":"Scotter charts","subSubMenu":[]},
-            {"id":6,"href":"#","isNew":false,"title":"Pie charts","subSubMenu":[]},
-            {"id":7,"href":"#","isNew":false,"title":"Gauge chart","subSubMenu":[]},
-            {"id":8,"href":"#","isNew":false,"title":"Radar charts","subSubMenu":[]},
-            {"id":9,"href":"#","isNew":false,"title":"Heatmap charts","subSubMenu":[]},
-            {"id":10,"href":"#","isNew":false,"title":"How to use","subSubMenu":[]}
+        {"id":3,"title":"Tables","icon":"#tables-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Tables","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Basic tables","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Advance tables","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Bulk Select","subSubMenus":[]}
         ]},
-        {"id":5,"title":"Components","icon":"components-icon","isNew":false,"href":"#","subMenus":[]},
-        {"id":6,"title":"Utilities","icon":"utilities-icon","isNew":false,"href":"#","subMenus":[]},
-        {"id":7,"title":"Multi level","icon":"multi-level-icon","isNew":false,"href":"#","subMenus":[]}
+        {"id":4,"title":"Echarts","icon":"#echarts-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Echarts","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Line charts","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Geo map","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts","subSubMenus":[]},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts","subSubMenus":[]},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts","subSubMenus":[]},
+            {"id":11,"href":"","isNew":false,"title":"How to use","subSubMenus":[]}
+        ]},
+        {"id":5,"title":"Components","icon":"#components-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Components","subSubMenus":[]}
+        ]},
+        {"id":6,"title":"Utilities","icon":"#utilities-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Utilities","subSubMenus":[]}
+        ]},
+        {"id":7,"title":"Multi level","icon":"#multi-level-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Multi level","subSubMenus":[]}
+        ]}
         
     ]},
-    {"id":5,"title":"DOCUMENTATION","icon":"icon",
-    "menus":[]}
+    {"id":5,"title":"DOCUMENTATION","icon":"documentation-icon",
+    "menus":[
+        {"id":1,"title":"E commerce","icon":"#e-commerce-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"title":"E commerce" ,"isNew":false,"href":"","subSubMenus":[]},
+
+            {"id":2,"href":"","title":"Admin","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Add product","href":"","isNew":false},
+                {"id":2,"title":"Products","href":"","isNew":false},
+                {"id":3,"title":"Customers","href":"","isNew":false},
+                {"id":4,"title":"Customer details","href":"","isNew":false},
+                {"id":5,"title":"Orders","href":"","isNew":false},
+                {"id":6,"title":"Order details","href":"","isNew":false},
+                {"id":7,"title":"Refund","href":"","isNew":false}
+            ]},
+            {"id":3,"href":"","title":"Customer","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Homepage","href":"","isNew":false},
+                {"id":2,"title":"Product details","href":"","isNew":false},
+                {"id":3,"title":"Products filter","href":"","isNew":false},
+                {"id":4,"title":"Cart","href":"","isNew":false},
+                {"id":5,"title":"Checkout","href":"","isNew":false},
+                {"id":6,"title":"Shipping info","href":"","isNew":false},
+                {"id":7,"title":"Profile","href":"","isNew":false},
+                {"id":8,"title":"Favourite store","href":"","isNew":false},
+                {"id":9,"title":"Wishlist","href":"","isNew":false},
+                {"id":10,"title":"Order tracking","href":"","isNew":false},
+                {"id":11,"title":"Invoice","href":"","isNew":false}
+            ]}
+        ]},
+        {"id":2,"title":"CRM","icon":"#crm-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"title":"CRM" ,"isNew":false,"href":"","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Analytics","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Deals","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Deals details","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Leads","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Leads details","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Reports","subSubMenus":[]},
+            {"id":8,"href":"","isNew":true,"title":"Reports details","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Add contact","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"Project management","icon":"#project-management-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Project management","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create new","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Project list view","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Project card view","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Project board view","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Todo list","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Project details","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"Chat","icon":"#chat-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Chat","subSubMenus":[]}
+        ]}
+    ]}
+],
+
+"fa-menuHeaders":[
+    {"id":1,"title":"خانه","icon":"home-header-icon",
+    "menus":[
+        {"id":1,"title":"خانه" ,"icon":"#circle-chart","isNew":true,"href":"/keyvar/",
+    "subMenus":[
+        {"id":1,"title":"خانه" ,"icon":"","isNew":false,"href":"/keyvar/","subSubMenus":[]},
+        {"id":2,"title":"ایکامرس" ,"icon":"","isNew":false,"href":"/keyvar/","subSubMenus":[]},
+        {"id":3,"title":"مدیریت پروژه" ,"icon":"","isNew":false,"href":"/keyvar/project-management","subSubMenus":[]},
+        {"id":4,"title":"CRM" ,"icon":"","isNew":true,"href":"/keyvar/crm","subSubMenus":[]},
+        {"id":5,"title":"محتوی اجتماعی" ,"icon":"","isNew":false,"href":"/keyvar/social-feed","subSubMenus":[]}]
+    }]
+},
+    {"id":2,"title":"اپلیکیشن ها","icon":"apps-icon",
+    "menus":[
+        {"id":1,"title":"ایکامرس","icon":"#e-commerce-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"title":"E commerce" ,"isNew":false,"href":"","subSubMenus":[]},
+
+            {"id":2,"href":"","title":"Admin","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Add product","href":"","isNew":false},
+                {"id":2,"title":"Products","href":"","isNew":false},
+                {"id":3,"title":"Customers","href":"","isNew":false},
+                {"id":4,"title":"Customer details","href":"","isNew":false},
+                {"id":5,"title":"Orders","href":"","isNew":false},
+                {"id":6,"title":"Order details","href":"","isNew":false},
+                {"id":7,"title":"Refund","href":"","isNew":false}
+            ]},
+            {"id":3,"href":"","title":"Customer","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Homepage","href":"","isNew":false},
+                {"id":2,"title":"Product details","href":"","isNew":false},
+                {"id":3,"title":"Products filter","href":"","isNew":false},
+                {"id":4,"title":"Cart","href":"","isNew":false},
+                {"id":5,"title":"Checkout","href":"","isNew":false},
+                {"id":6,"title":"Shipping info","href":"","isNew":false},
+                {"id":7,"title":"Profile","href":"","isNew":false},
+                {"id":8,"title":"Favourite store","href":"","isNew":false},
+                {"id":9,"title":"Wishlist","href":"","isNew":false},
+                {"id":10,"title":"Order tracking","href":"","isNew":false},
+                {"id":11,"title":"Invoice","href":"","isNew":false}
+            ]}
+        ]},
+        {"id":2,"title":"CRM","icon":"#crm-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"title":"CRM" ,"isNew":false,"href":"","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Analytics","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Deals","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Deals details","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Leads","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Leads details","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Reports","subSubMenus":[]},
+            {"id":8,"href":"","isNew":true,"title":"Reports details","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Add contact","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"مدیریت پروژه","icon":"#project-management-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Project management","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create new","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Project list view","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Project card view","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Project board view","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Todo list","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Project details","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"چت","icon":"#chat-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Chat","subSubMenus":[]}
+        ]},
+        {"id":5,"title":"ایمیل","icon":"#email-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Email","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Inbox","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Email detail","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Compose","subSubMenus":[]}
+        ]},
+        {"id":6,"title":"رویدادها","icon":"#events-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Events","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create an event","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Event detail","subSubMenus":[]}
+        ]},
+        {"id":7,"title":"Kanban","icon":"#kanban-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Kanban","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Kanban","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Boards","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Create board","subSubMenus":[]}
+        ]},
+        {"id":8,"title":"Social","icon":"#social-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Social","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Profile","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Setting","subSubMenus":[]}
+        ]},
+        {"id":9,"title":"Calender","icon":"#calender-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Calender","subSubMenus":[]}
+        ]}
+    ]},
+    {"id":3,"title":"صفحات","icon":"icon",
+    "menus":[
+        {"id":1,"title":"شروع","icon":"#starter-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Starter","subSubMenus":[]}
+        ]},
+        {"id":2,"title":"Faq","icon":"#faq-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Faq","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Faq accordian","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Faq tab","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"Landing","icon":"#language-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Landing","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Default","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Alternat","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"قیمت گذاری","icon":"#pricing-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Pricing","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Pricing column","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Pricing grid","subSubMenus":[]}
+        ]},
+        {"id":5,"title":"اطلاعیه ها","icon":"#notifications-icon","isNew":false,"href":"/keyvar/notifications","subMenus":[
+            {"id":1,"href":"/keyvar/notifications","isNew":false,"title":"Notifications","subSubMenus":[]}
+        ]},
+        {"id":6,"title":"اعضا","icon":"#members-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Members","subSubMenus":[]}
+        ]},
+        {"id":7,"title":"جدول زمانی","icon":"#timeline-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Timeline","subSubMenus":[]}
+        ]},
+        {"id":8,"title":"خطاها","icon":"#errors-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Errors","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"404","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"403","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"500","subSubMenus":[]}
+        ]},
+        {"id":9,"title":"احراز هویت","icon":"#lock-closed","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Authentication","subSubMenus":[]},
+
+            {"id":2,"href":"","isNew":true,"title":"Simple","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
+            ]},
+            {"id":3,"href":"","isNew":true,"title":"Split","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
+            ]},
+            {"id":4,"href":"","isNew":true,"title":"Card","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
+            ]}
+        ]},
+        {"id":10,"title":"چیدمان","icon":"#layout-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Layout","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Vertical sidenav","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Dark mode","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Sidenav collaps","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Darknav","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Topnav slim","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Navbar top slim","subSubMenus":[]},
+            {"id":8,"href":"","isNew":false,"title":"Combo nav","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Combo nav slim","subSubMenus":[]},
+            {"id":10,"href":"","isNew":false,"title":"Dual nav","subSubMenus":[]}
+        ]}
+    ]},
+    {"id":4,"title":"ماژولها","icon":"icon",
+    "menus":[
+        {"id":1,"title":"فرم ها","icon":"#forms-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Forms","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Basic","subSubMenus":[
+                {"id":1,"title":"Form control","href":"","isNew":false},
+                {"id":2,"title":"Input group","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Select","href":"","isNew":false},
+                {"id":5,"title":"Checks","href":"","isNew":false},
+                {"id":6,"title":"Range","href":"","isNew":false},
+                {"id":7,"title":"Layout","href":"","isNew":false}
+            ]},
+            {"id":3,"href":"","isNew":false,"title":"Advance","subSubMenus":[
+                 {"id":1,"title":"Advance select","href":"","isNew":false},
+                {"id":2,"title":"Date picker","href":"","isNew":false},
+                {"id":3,"title":"Editor","href":"","isNew":false},
+                {"id":4,"title":"File uploader","href":"","isNew":false},
+                {"id":5,"title":"Rating","href":"","isNew":false},
+                {"id":6,"title":"Emoji button","href":"","isNew":false}
+            ]},
+            {"id":4,"href":"","isNew":false,"title":"Validation","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Wisard","subSubMenus":[]}
+        ]},
+        {"id":2,"title":"آیکون ها","icon":"#icons-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Icons","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Feather","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Font awesome","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Unicons","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"جداول","icon":"#tables-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Tables","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Basic tables","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Advance tables","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Bulk Select","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"نمودارها","icon":"#echarts-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Echarts","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Line charts","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Geo map","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts","subSubMenus":[]},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts","subSubMenus":[]},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts","subSubMenus":[]},
+            {"id":11,"href":"","isNew":false,"title":"How to use","subSubMenus":[]}
+        ]},
+        {"id":5,"title":"اجزاء","icon":"#components-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Components","subSubMenus":[]}
+        ]},
+        {"id":6,"title":"Utilities","icon":"#utilities-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Utilities","subSubMenus":[]}
+        ]},
+        {"id":7,"title":"Multi level","icon":"#multi-level-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Multi level","subSubMenus":[]}
+        ]}
+        
+    ]},
+    {"id":5,"title":"داکیومنت ها","icon":"icon",
+    "menus":[
+        {"id":1,"title":"ایکامرس","icon":"#e-commerce-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"title":"E commerce" ,"isNew":false,"href":"","subSubMenus":[]},
+
+            {"id":2,"href":"","title":"Admin","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Add product","href":"","isNew":false},
+                {"id":2,"title":"Products","href":"","isNew":false},
+                {"id":3,"title":"Customers","href":"","isNew":false},
+                {"id":4,"title":"Customer details","href":"","isNew":false},
+                {"id":5,"title":"Orders","href":"","isNew":false},
+                {"id":6,"title":"Order details","href":"","isNew":false},
+                {"id":7,"title":"Refund","href":"","isNew":false}
+            ]},
+            {"id":3,"href":"","title":"Customer","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Homepage","href":"","isNew":false},
+                {"id":2,"title":"Product details","href":"","isNew":false},
+                {"id":3,"title":"Products filter","href":"","isNew":false},
+                {"id":4,"title":"Cart","href":"","isNew":false},
+                {"id":5,"title":"Checkout","href":"","isNew":false},
+                {"id":6,"title":"Shipping info","href":"","isNew":false},
+                {"id":7,"title":"Profile","href":"","isNew":false},
+                {"id":8,"title":"Favourite store","href":"","isNew":false},
+                {"id":9,"title":"Wishlist","href":"","isNew":false},
+                {"id":10,"title":"Order tracking","href":"","isNew":false},
+                {"id":11,"title":"Invoice","href":"","isNew":false}
+            ]}
+        ]},
+        {"id":2,"title":"CRM","icon":"#crm-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"title":"CRM" ,"isNew":false,"href":"","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Analytics","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Deals","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Deals details","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Leads","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Leads details","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Reports","subSubMenus":[]},
+            {"id":8,"href":"","isNew":true,"title":"Reports details","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Add contact","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"مدیریت پروژه","icon":"#project-management-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Project management","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create new","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Project list view","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Project card view","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Project board view","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Todo list","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Project details","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"چت","icon":"#chat-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Chat","subSubMenus":[]}
+        ]}
+    ]}
+],
+
+"en-navbar":[
+    {"id":1,"type":"normal","title":"Home","icon":"#home-icon",
+    "menus":[
+        {"id":1,"title":"Home" ,"icon":"#circle-chart","isNew":true,"href":"/keyvar/",
+    "subMenus":[
+        {"id":1,"title":"Home" ,"icon":"","isNew":false,"href":"/keyvar/","subSubMenus":[]},
+        {"id":2,"title":"E commerce" ,"icon":"#e-commerce-icon","isNew":false,"href":"/keyvar/","subSubMenus":[]},
+        {"id":3,"title":"Project management" ,"icon":"#project-management-icon","isNew":false,"href":"/keyvar/project-management","subSubMenus":[]},
+        {"id":4,"title":"CRM" ,"icon":"#crm-icon","isNew":true,"href":"/keyvar/crm","subSubMenus":[]},
+        {"id":5,"title":"Social feed" ,"icon":"#social-icon","isNew":false,"href":"/keyvar/social-feed","subSubMenus":[]}]
+    }]
+},
+    {"id":2,"type":"normal","title":"Apps","icon":"#cube-icon",
+    "menus":[
+        {"id":1,"title":"E commerce","icon":"#e-commerce-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"title":"E commerce" ,"isNew":false,"href":"","subSubMenus":[]},
+
+            {"id":2,"href":"","title":"Admin","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Add product","href":"","isNew":false},
+                {"id":2,"title":"Products","href":"","isNew":false},
+                {"id":3,"title":"Customers","href":"","isNew":false},
+                {"id":4,"title":"Customer details","href":"","isNew":false},
+                {"id":5,"title":"Orders","href":"","isNew":false},
+                {"id":6,"title":"Order details","href":"","isNew":false},
+                {"id":7,"title":"Refund","href":"","isNew":false}
+            ]},
+            {"id":3,"href":"","title":"Customer","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Homepage","href":"","isNew":false},
+                {"id":2,"title":"Product details","href":"","isNew":false},
+                {"id":3,"title":"Products filter","href":"","isNew":false},
+                {"id":4,"title":"Cart","href":"","isNew":false},
+                {"id":5,"title":"Checkout","href":"","isNew":false},
+                {"id":6,"title":"Shipping info","href":"","isNew":false},
+                {"id":7,"title":"Profile","href":"","isNew":false},
+                {"id":8,"title":"Favourite store","href":"","isNew":false},
+                {"id":9,"title":"Wishlist","href":"","isNew":false},
+                {"id":10,"title":"Order tracking","href":"","isNew":false},
+                {"id":11,"title":"Invoice","href":"","isNew":false}
+            ]}
+        ]},
+        {"id":2,"title":"CRM","icon":"#crm-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"title":"CRM" ,"isNew":false,"href":"","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Analytics","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Deals","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Deals details","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Leads","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Leads details","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Reports","subSubMenus":[]},
+            {"id":8,"href":"","isNew":true,"title":"Reports details","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Add contact","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"Project management","icon":"#project-management-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Project management","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create new","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Project list view","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Project card view","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Project board view","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Todo list","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Project details","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"Chat","icon":"#chat-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Chat","subSubMenus":[]}
+        ]},
+        {"id":5,"title":"Email","icon":"#email-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Email","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Inbox","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Email detail","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Compose","subSubMenus":[]}
+        ]},
+        {"id":6,"title":"Events","icon":"#events-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Events","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create an event","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Event detail","subSubMenus":[]}
+        ]},
+        {"id":7,"title":"Kanban","icon":"#kanban-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Kanban","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Kanban","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Boards","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Create board","subSubMenus":[]}
+        ]},
+        {"id":8,"title":"Social","icon":"#social-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Social","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Profile","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Setting","subSubMenus":[]}
+        ]},
+        {"id":9,"title":"Calender","icon":"#calender-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Calender","subSubMenus":[]}
+        ]}
+    ]},
+    {"id":3,"type":"normal","title":"Pages","icon":"#pages-icon",
+    "menus":[
+        {"id":1,"title":"Starter","icon":"#starter-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Starter","subSubMenus":[]}
+        ]},
+        {"id":2,"title":"Faq","icon":"#faq-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Faq","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Faq accordian","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Faq tab","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"Landing","icon":"#language-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Landing","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Default","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Alternat","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"Pricing","icon":"#pricing-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Pricing","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Pricing column","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Pricing grid","subSubMenus":[]}
+        ]},
+        {"id":5,"title":"Notifications","icon":"#notifications-icon","isNew":false,"href":"/keyvar/notifications","subMenus":[
+            {"id":1,"href":"/keyvar/notifications","isNew":false,"title":"Notifications","subSubMenus":[]}
+        ]},
+        {"id":6,"title":"Members","icon":"#members-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Members","subSubMenus":[]}
+        ]},
+        {"id":7,"title":"Timeline","icon":"#timeline-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Timeline","subSubMenus":[]}
+        ]},
+        {"id":8,"title":"Errors","icon":"#errors-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Errors","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"404","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"403","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"500","subSubMenus":[]}
+        ]},
+        {"id":9,"title":"Authentication","icon":"#lock-closed","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Authentication","subSubMenus":[]},
+
+            {"id":2,"href":"","isNew":true,"title":"Simple","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
+            ]},
+            {"id":3,"href":"","isNew":true,"title":"Split","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
+            ]},
+            {"id":4,"href":"","isNew":true,"title":"Card","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
+            ]}
+        ]},
+        {"id":10,"title":"Layout","icon":"#layout-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Layout","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Vertical sidenav","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Dark mode","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Sidenav collaps","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Darknav","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Topnav slim","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Navbar top slim","subSubMenus":[]},
+            {"id":8,"href":"","isNew":false,"title":"Combo nav","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Combo nav slim","subSubMenus":[]},
+            {"id":10,"href":"","isNew":false,"title":"Dual nav","subSubMenus":[]}
+        ]}
+    ]},
+    {"id":4,"type":"grid","title":"Modules","icon":"#puzzle-icon",
+    "menus":[
+        {"id":1,"title":"Forms","icon":"#forms-icon","isNew":false,"href":"","subMenus":[
+           
+           
+                {"id":1,"title":"Form control","href":"","isNew":false},
+                {"id":2,"title":"Input group","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Select","href":"","isNew":false},
+                {"id":5,"title":"Checks","href":"","isNew":false},
+                {"id":6,"title":"Range","href":"","isNew":false},
+                {"id":7,"title":"Layout","href":"","isNew":false},
+          
+          
+                {"id":1,"title":"Advance select","href":"","isNew":false},
+                {"id":2,"title":"Date picker","href":"","isNew":false},
+                {"id":3,"title":"Editor","href":"","isNew":false},
+                {"id":4,"title":"File uploader","href":"","isNew":false},
+                {"id":5,"title":"Rating","href":"","isNew":false},
+                {"id":6,"title":"Emoji button","href":"","isNew":false},
+           
+                {"id":4,"href":"","isNew":false,"title":"Validation"},
+                {"id":5,"href":"","isNew":false,"title":"Wisard"}
+        ]},
+        {"id":2,"title":"Icons","icon":"#icons-icon","isNew":false,"href":"","subMenus":[
+            {"id":2,"href":"","isNew":false,"title":"Feather"},
+            {"id":3,"href":"","isNew":false,"title":"Font awesome"},
+            {"id":4,"href":"","isNew":false,"title":"Unicons"}
+        ]},
+        {"id":3,"title":"Tables","icon":"#tables-icon","isNew":true,"href":"","subMenus":[
+            {"id":2,"href":"","isNew":false,"title":"Basic tables"},
+            {"id":3,"href":"","isNew":false,"title":"Advance tables"},
+            {"id":4,"href":"","isNew":false,"title":"Bulk Select"}
+        ]},
+        {"id":4,"title":"Echarts","icon":"#echarts-icon","isNew":false,"href":"","subMenus":[
+            {"id":2,"href":"","isNew":false,"title":"Line charts"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"}
+        ]},
+        {"id":5,"title":"Components","icon":"#components-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Components"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"}
+        ]},
+        {"id":6,"title":"Utilities","icon":"#utilities-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Utilities"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"}
+        ]},
+        {"id":7,"title":"Multi level","icon":"#multi-level-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Multi level"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"}
+        ]}
+        
+    ]},
+    {"id":5,"type":"normal","title":"Documentation","icon":"#documentation-icon",
+    "menus":[
+        {"id":1,"title":"E commerce","icon":"#e-commerce-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"title":"E commerce" ,"isNew":false,"href":"","subSubMenus":[]},
+
+            {"id":2,"href":"","title":"Admin","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Add product","href":"","isNew":false},
+                {"id":2,"title":"Products","href":"","isNew":false},
+                {"id":3,"title":"Customers","href":"","isNew":false},
+                {"id":4,"title":"Customer details","href":"","isNew":false},
+                {"id":5,"title":"Orders","href":"","isNew":false},
+                {"id":6,"title":"Order details","href":"","isNew":false},
+                {"id":7,"title":"Refund","href":"","isNew":false}
+            ]},
+            {"id":3,"href":"","title":"Customer","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Homepage","href":"","isNew":false},
+                {"id":2,"title":"Product details","href":"","isNew":false},
+                {"id":3,"title":"Products filter","href":"","isNew":false},
+                {"id":4,"title":"Cart","href":"","isNew":false},
+                {"id":5,"title":"Checkout","href":"","isNew":false},
+                {"id":6,"title":"Shipping info","href":"","isNew":false},
+                {"id":7,"title":"Profile","href":"","isNew":false},
+                {"id":8,"title":"Favourite store","href":"","isNew":false},
+                {"id":9,"title":"Wishlist","href":"","isNew":false},
+                {"id":10,"title":"Order tracking","href":"","isNew":false},
+                {"id":11,"title":"Invoice","href":"","isNew":false}
+            ]}
+        ]},
+        {"id":2,"title":"CRM","icon":"#crm-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"title":"CRM" ,"isNew":false,"href":"","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Analytics","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Deals","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Deals details","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Leads","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Leads details","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Reports","subSubMenus":[]},
+            {"id":8,"href":"","isNew":true,"title":"Reports details","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Add contact","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"Project management","icon":"#project-management-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Project management","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create new","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Project list view","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Project card view","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Project board view","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Todo list","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Project details","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"Chat","icon":"#chat-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Chat","subSubMenus":[]}
+        ]}
+    ]}
+],
+
+"fa-navbar":[
+    {"id":1,"type":"normal","title":"خانه","icon":"#home-icon",
+    "menus":[
+        {"id":1,"title":"خانه" ,"icon":"#circle-chart","isNew":true,"href":"/keyvar/",
+    "subMenus":[
+        {"id":1,"title":"خانه" ,"icon":"","isNew":false,"href":"/keyvar/","subSubMenus":[]},
+        {"id":2,"title":"ایکامرس" ,"icon":"#e-commerce-icon","isNew":false,"href":"/keyvar/","subSubMenus":[]},
+        {"id":3,"title":"مدیریت پروژه" ,"icon":"#project-management-icon","isNew":false,"href":"/keyvar/project-management","subSubMenus":[]},
+        {"id":4,"title":"CRM" ,"icon":"#crm-icon","isNew":true,"href":"/keyvar/crm","subSubMenus":[]},
+        {"id":5,"title":"محتوی اجتماعی" ,"icon":"#social-icon","isNew":false,"href":"/keyvar/social-feed","subSubMenus":[]}]
+    }]
+},
+    {"id":2,"type":"normal","title":"اپلیکیشن ها","icon":"#cube-icon",
+    "menus":[
+        {"id":1,"title":"ایکامرس","icon":"#e-commerce-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"title":"E commerce" ,"isNew":false,"href":"","subSubMenus":[]},
+
+            {"id":2,"href":"","title":"Admin","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Add product","href":"","isNew":false},
+                {"id":2,"title":"Products","href":"","isNew":false},
+                {"id":3,"title":"Customers","href":"","isNew":false},
+                {"id":4,"title":"Customer details","href":"","isNew":false},
+                {"id":5,"title":"Orders","href":"","isNew":false},
+                {"id":6,"title":"Order details","href":"","isNew":false},
+                {"id":7,"title":"Refund","href":"","isNew":false}
+            ]},
+            {"id":3,"href":"","title":"Customer","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Homepage","href":"","isNew":false},
+                {"id":2,"title":"Product details","href":"","isNew":false},
+                {"id":3,"title":"Products filter","href":"","isNew":false},
+                {"id":4,"title":"Cart","href":"","isNew":false},
+                {"id":5,"title":"Checkout","href":"","isNew":false},
+                {"id":6,"title":"Shipping info","href":"","isNew":false},
+                {"id":7,"title":"Profile","href":"","isNew":false},
+                {"id":8,"title":"Favourite store","href":"","isNew":false},
+                {"id":9,"title":"Wishlist","href":"","isNew":false},
+                {"id":10,"title":"Order tracking","href":"","isNew":false},
+                {"id":11,"title":"Invoice","href":"","isNew":false}
+            ]}
+        ]},
+        {"id":2,"title":"CRM","icon":"#crm-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"title":"CRM" ,"isNew":false,"href":"","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Analytics","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Deals","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Deals details","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Leads","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Leads details","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Reports","subSubMenus":[]},
+            {"id":8,"href":"","isNew":true,"title":"Reports details","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Add contact","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"مدیریت پروژه","icon":"#project-management-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Project management","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create new","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Project list view","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Project card view","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Project board view","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Todo list","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Project details","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"چت","icon":"#chat-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Chat","subSubMenus":[]}
+        ]},
+        {"id":5,"title":"ایمیل","icon":"#email-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Email","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Inbox","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Email detail","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Compose","subSubMenus":[]}
+        ]},
+        {"id":6,"title":"رویدادها","icon":"#events-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Events","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create an event","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Event detail","subSubMenus":[]}
+        ]},
+        {"id":7,"title":"Kanban","icon":"#kanban-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Kanban","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Kanban","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Boards","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Create board","subSubMenus":[]}
+        ]},
+        {"id":8,"title":"Social","icon":"#social-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Social","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Profile","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Setting","subSubMenus":[]}
+        ]},
+        {"id":9,"title":"Calender","icon":"#calender-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Calender","subSubMenus":[]}
+        ]}
+    ]},
+    {"id":3,"type":"normal","title":"صفحات","icon":"#pages-icon",
+    "menus":[
+        {"id":1,"title":"شروع","icon":"#starter-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Starter","subSubMenus":[]}
+        ]},
+        {"id":2,"title":"Faq","icon":"#faq-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Faq","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Faq accordian","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Faq tab","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"Landing","icon":"#language-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Landing","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Default","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"Alternat","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"قیمت گذاری","icon":"#pricing-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Pricing","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Pricing column","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Pricing grid","subSubMenus":[]}
+        ]},
+        {"id":5,"title":"اطلاعیه ها","icon":"#notifications-icon","isNew":false,"href":"/keyvar/notifications","subMenus":[
+            {"id":1,"href":"/keyvar/notifications","isNew":false,"title":"Notifications","subSubMenus":[]}
+        ]},
+        {"id":6,"title":"اعضا","icon":"#members-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Members","subSubMenus":[]}
+        ]},
+        {"id":7,"title":"جدول زمانی","icon":"#timeline-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Timeline","subSubMenus":[]}
+        ]},
+        {"id":8,"title":"خطاها","icon":"#errors-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Errors","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"404","subSubMenus":[]},
+            {"id":3,"href":"","isNew":true,"title":"403","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"500","subSubMenus":[]}
+        ]},
+        {"id":9,"title":"احراز هویت","icon":"#lock-closed","isNew":true,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Authentication","subSubMenus":[]},
+
+            {"id":2,"href":"","isNew":true,"title":"Simple","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
+            ]},
+            {"id":3,"href":"","isNew":true,"title":"Split","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
+            ]},
+            {"id":4,"href":"","isNew":true,"title":"Card","subSubMenus":[
+                {"id":1,"title":"Sign in","href":"","isNew":false},
+                {"id":2,"title":"Sign up","href":"","isNew":false},
+                {"id":3,"title":"Sign out","href":"","isNew":false},
+                {"id":4,"title":"Forgot password","href":"","isNew":false},
+                {"id":5,"title":"Rest password","href":"","isNew":false},
+                {"id":6,"title":"Lock screen","href":"","isNew":false},
+                {"id":7,"title":"2FA","href":"","isNew":true}
+            ]}
+        ]},
+        {"id":10,"title":"چیدمان","icon":"#layout-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Layout","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Vertical sidenav","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Dark mode","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Sidenav collaps","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Darknav","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Topnav slim","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Navbar top slim","subSubMenus":[]},
+            {"id":8,"href":"","isNew":false,"title":"Combo nav","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Combo nav slim","subSubMenus":[]},
+            {"id":10,"href":"","isNew":false,"title":"Dual nav","subSubMenus":[]}
+        ]}
+    ]},
+    {"id":4,"type":"grid","title":"ماژول ها","icon":"#puzzle-icon",
+    "menus":[
+        {"id":1,"title":"فرم ها","icon":"#forms-icon","isNew":false,"href":"","subMenus":[
+           
+           
+            {"id":1,"title":"Form control","href":"","isNew":false},
+            {"id":2,"title":"Input group","href":"","isNew":false},
+            {"id":3,"title":"Sign out","href":"","isNew":false},
+            {"id":4,"title":"Select","href":"","isNew":false},
+            {"id":5,"title":"Checks","href":"","isNew":false},
+            {"id":6,"title":"Range","href":"","isNew":false},
+            {"id":7,"title":"Layout","href":"","isNew":false},
+      
+      
+            {"id":1,"title":"Advance select","href":"","isNew":false},
+            {"id":2,"title":"Date picker","href":"","isNew":false},
+            {"id":3,"title":"Editor","href":"","isNew":false},
+            {"id":4,"title":"File uploader","href":"","isNew":false},
+            {"id":5,"title":"Rating","href":"","isNew":false},
+            {"id":6,"title":"Emoji button","href":"","isNew":false},
+       
+            {"id":4,"href":"","isNew":false,"title":"Validation"},
+            {"id":5,"href":"","isNew":false,"title":"Wisard"}
+        ]},
+        {"id":2,"title":"آیکون ها","icon":"#icons-icon","isNew":false,"href":"","subMenus":[
+            {"id":2,"href":"","isNew":false,"title":"Feather"},
+            {"id":3,"href":"","isNew":false,"title":"Font awesome"},
+            {"id":4,"href":"","isNew":false,"title":"Unicons"}
+        ]},
+        {"id":3,"title":"جداول","icon":"#tables-icon","isNew":true,"href":"","subMenus":[
+            {"id":2,"href":"","isNew":false,"title":"Basic tables"},
+            {"id":3,"href":"","isNew":false,"title":"Advance tables"},
+            {"id":4,"href":"","isNew":false,"title":"Bulk Select"}
+        ]},
+        {"id":4,"title":"نمودارها","icon":"#echarts-icon","isNew":false,"href":"","subMenus":[
+            {"id":2,"href":"","isNew":false,"title":"Line charts"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"}
+        ]},
+        {"id":5,"title":"اجزاء","icon":"#components-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Components"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"}
+        ]},
+        {"id":6,"title":"Utilities","icon":"#utilities-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Utilities"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"}
+        ]},
+        {"id":7,"title":"Multi level","icon":"#multi-level-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"href":"","isNew":false,"title":"Multi level"},
+            {"id":3,"href":"","isNew":false,"title":"Bar charts"},
+            {"id":4,"href":"","isNew":false,"title":"Candlestick charts"},
+            {"id":5,"href":"","isNew":false,"title":"Geo map"},
+            {"id":6,"href":"","isNew":false,"title":"Scotter charts"},
+            {"id":7,"href":"","isNew":false,"title":"Pie charts"},
+            {"id":8,"href":"","isNew":false,"title":"Gauge chart"},
+            {"id":9,"href":"","isNew":false,"title":"Radar charts"},
+            {"id":10,"href":"","isNew":false,"title":"Heatmap charts"},
+            {"id":11,"href":"","isNew":false,"title":"How to use"}
+        ]}
+        
+    ]},
+    {"id":5,"type":"normal","title":"داکیومنت ها","icon":"#documentation-icon",
+    "menus":[
+        {"id":1,"title":"ایکامرس","icon":"#e-commerce-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"title":"E commerce" ,"isNew":false,"href":"","subSubMenus":[]},
+
+            {"id":2,"href":"","title":"Admin","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Add product","href":"","isNew":false},
+                {"id":2,"title":"Products","href":"","isNew":false},
+                {"id":3,"title":"Customers","href":"","isNew":false},
+                {"id":4,"title":"Customer details","href":"","isNew":false},
+                {"id":5,"title":"Orders","href":"","isNew":false},
+                {"id":6,"title":"Order details","href":"","isNew":false},
+                {"id":7,"title":"Refund","href":"","isNew":false}
+            ]},
+            {"id":3,"href":"","title":"Customer","isNew":false,"subSubMenus":[
+                {"id":1,"title":"Homepage","href":"","isNew":false},
+                {"id":2,"title":"Product details","href":"","isNew":false},
+                {"id":3,"title":"Products filter","href":"","isNew":false},
+                {"id":4,"title":"Cart","href":"","isNew":false},
+                {"id":5,"title":"Checkout","href":"","isNew":false},
+                {"id":6,"title":"Shipping info","href":"","isNew":false},
+                {"id":7,"title":"Profile","href":"","isNew":false},
+                {"id":8,"title":"Favourite store","href":"","isNew":false},
+                {"id":9,"title":"Wishlist","href":"","isNew":false},
+                {"id":10,"title":"Order tracking","href":"","isNew":false},
+                {"id":11,"title":"Invoice","href":"","isNew":false}
+            ]}
+        ]},
+        {"id":2,"title":"CRM","icon":"#crm-icon","isNew":true,"href":"","subMenus":[
+            {"id":1,"title":"CRM" ,"isNew":false,"href":"","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Analytics","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Deals","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Deals details","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Leads","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Leads details","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Reports","subSubMenus":[]},
+            {"id":8,"href":"","isNew":true,"title":"Reports details","subSubMenus":[]},
+            {"id":9,"href":"","isNew":false,"title":"Add contact","subSubMenus":[]}
+        ]},
+        {"id":3,"title":"مدیریت پروژه","icon":"#project-management-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Project management","subSubMenus":[]},
+            {"id":2,"href":"","isNew":false,"title":"Create new","subSubMenus":[]},
+            {"id":3,"href":"","isNew":false,"title":"Project list view","subSubMenus":[]},
+            {"id":4,"href":"","isNew":false,"title":"Project card view","subSubMenus":[]},
+            {"id":5,"href":"","isNew":false,"title":"Project board view","subSubMenus":[]},
+            {"id":6,"href":"","isNew":false,"title":"Todo list","subSubMenus":[]},
+            {"id":7,"href":"","isNew":false,"title":"Project details","subSubMenus":[]}
+        ]},
+        {"id":4,"title":"چت","icon":"#chat-icon","isNew":false,"href":"","subMenus":[
+            {"id":1,"isNew":false,"href":"","title":"Chat","subSubMenus":[]}
+        ]}
+    ]}
 ],
   "fa-customize": {
     "sideBtn": "شخصی سازی",

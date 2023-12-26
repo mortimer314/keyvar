@@ -194,7 +194,7 @@
     border-radius: 50%;
   }
 
-  /* =========== before on topbar tools content =========*/
+  /* =========== Add before on topbar tools content =========*/
   .topbar-tools-content {
     @apply absolute z-0 top-14 md:top-15 m-auto bg-white -left-1 md:-left-0 rounded-md border border-solid border-slate-300 dark:border-slate-500 dark:bg-slate-800;
   }
@@ -369,30 +369,69 @@
     z-index: -1;
   }
 
-  /* .menu-content--hover::before{
-  display: block;
-  content: '';
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  inset-inline-start: -8px;
-  border-radius: 1px;
-  rotate: 45deg;
-  top: 15px ;
-  background-color: inherit;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  -ms-border-radius: 1px;
-  -o-border-radius: 1px;
- 
-  z-index: 2;
-} */
-/* 
-a.submenu-modifire:first-child{
-  color: red;
-} */
+  /* =========== Add before on navbar wrapper content =========*/
+  .navbar-wrapper-content {
+    @apply relative z-0  m-auto bg-white rounded-md border border-solid border-slate-300 dark:border-slate-500 dark:bg-slate-800;
+  }
 
-.open-menu-mobile{
-  height: 100vh;
-}
+
+  .navbar-wrapper-content-left {
+    @apply relative z-0  m-auto bg-white rounded-md border border-solid border-gray-300 dark:border-slate-500 dark:bg-slate-800;
+
+  }
+
+
+  .navbar-wrapper-content-left::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 18px; 
+    height: 18px;
+    display: block;
+    background-color: inherit;
+    rotate: 45deg;
+    top: -10px;
+    right: 18px;
+    border: 1px solid transparent;
+    @apply border-t-gray-400 border-l-gray-400 dark:border-t-slate-600 dark:border-l-slate-600;
+
+  }
+
+  .navbar-wrapper-content::before {
+    position: absolute;
+    content: ''; 
+    z-index: -1;
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-color: inherit;
+    rotate: 45deg;
+    top: -10px;
+    left: 18px;
+    border: 1px solid transparent;
+    @apply border-t-gray-400 border-l-gray-400 dark:border-t-slate-600 dark:border-l-slate-600;
+
+  }
+
+  .navbar-wrapper-content-slim {
+    @apply top-7 -left-3.5;
+  }
+
+  .navbar-wrapper-content-slim-left {
+    @apply top-7 -right-3.5;
+  }
+
+  .navbar-wrapper-content-slim::before {
+    width: 14px;
+    height: 14px;
+    top: -8px;
+  }
+
+  .navbar-wrapper-content-slim-left::before {
+    width: 14px;
+    height: 14px;
+    top: -8px;
+  }
+
+
 }

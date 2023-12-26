@@ -5,6 +5,7 @@ import MenuHeaders from './MenuHeaders'
 import MenuTitle from './MenuTitle'
 import Menu from './menu'
 import MenuContent from './MenuContent'
+import {data} from "./../../../data.js"
 
 export default function Sidebar() {
   const [dataSidebar, setDataSidebar] = useState()
@@ -27,16 +28,25 @@ export default function Sidebar() {
   } = useContext(CustomizeContext)
 
   useEffect(() => {
-    fetch(`http://localhost:3000/${language}-menuHeaders`)
-      .then(res => res.json())
-      .then(data => {
-        setDataSidebar(data)
+    // fetch(`http://localhost:3000/${language}-menuHeaders`)
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     setDataSidebar(data)
 
-        refArrayOfMenuTitleElems.current = data.map((item, index) => {
-          let subx = item.menus.map((subItem, subIndex) => 0)
-          return subx
-        })
-      })
+    //     refArrayOfMenuTitleElems.current = data.map((item, index) => {
+    //       let subx = item.menus.map((subItem, subIndex) => 0)
+    //       return subx
+    //     })
+    //   })
+
+    let mainData = data[`${language}-menuHeaders`]
+    refArrayOfMenuTitleElems.current = mainData.map((item, index) => {
+            let subx = item.menus.map((subItem, subIndex) => 0)
+            return subx
+          })
+      
+      setDataSidebar(mainData)
+   
   }, [language])
 
   function generateOpeningMenuContent(event, index, indexInner) {
@@ -51,7 +61,6 @@ export default function Sidebar() {
     <>
       {
         (navigationType === "vertical" || navigationType === "combo") &&
-
 
         <div className={` sidebar  transition-all ease-linear lg:block hidden border-solid 
               ${collapsed ? (horizentalNavbarShape === "slim" ? "top-7 w-[255px] h-fit fixed bottom-0 " : "top-16 w-[255px] h-fit fixed bottom-0 ") : (horizentalNavbarShape === "slim" ? "pt-7 w-16  pb-32" : "pt-16 w-16  pb-96")}
@@ -106,15 +115,9 @@ export default function Sidebar() {
             }
 
           </div>
-
           <CollapseBtn theme={theme} verticalNavbarTheme={verticalNavbarTheme} language={language} collapsed={collapsed} collapsedHandler={collapsedHandler} />
-
         </div>
-
       }
-
-
     </>
-    // <div className=""></div>
   )
 }

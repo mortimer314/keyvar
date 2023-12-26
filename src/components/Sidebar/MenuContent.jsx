@@ -7,6 +7,7 @@ export default function MenuContent({ isLnaguageFa, subMenus, collapsed, theme, 
     let titleClasses = (theme === "dark" ?
         ((verticalNavbarTheme === "default") ? "text-slate-300 border-slate-600 bg-slate-800 text-slate-50" : "text-slate-400 border-slate-700 bg-slate-900 text-slate-50") :
         ((verticalNavbarTheme === "default") ? "text-slate-600 border-slate-400/80 bg-white " : "text-slate-400 border-slate-700 bg-slate-900 text-slate-50"))
+
     return (
         <div className={`${!collapsed && (isLnaguageFa ? ` menu-content-right--hover ` : "menu-content--hover")}  ${titleClasses} `}>
 

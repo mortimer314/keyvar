@@ -200,7 +200,6 @@ function ToolBtnContent(props) {
 }
 
 function ToolBtnContentOfProfile(props) {
-    console.log(props)
 
     return (
         <>

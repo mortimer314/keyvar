@@ -49,7 +49,6 @@ export default function MobieMenu() {
   return (
     <>
       {
-        // (navigationType === "vertical" || navigationType === "combo") &&
 
 
         <div className={` sidebar  transition-all ease-linear  border-solid  w-full
@@ -84,7 +83,6 @@ export default function MobieMenu() {
                             </div>
 
                             <div className={`menu-content transition-all 
-                            ${collapsed ? "" : ''}
 
 
                                    ${ ((selectedMenu === refArrayOfMenuTitleElems.current[index][indexInner]) ?

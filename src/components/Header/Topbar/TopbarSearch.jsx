@@ -115,7 +115,7 @@ export default function TopbarSearch({ isLanguageFa, isDarkTheme, statusTopbar, 
         onMouseEnter={() => setIsMouseEnter(true)}
         onMouseLeave={() => setIsMouseEnter(false)}
         ref={refElem2}
-        className={`topbar__search-suggestion absolute transition-all ease-linear duration-100 
+        className={`topbar__search-suggestion absolute transition-all ease-linear duration-100 z-10
         w-full max-h-[400px] overflow-y-auto border border-solid text-center py-2 px-4  border-zinc-300 dark:border-[#373e53]
         rounded-md bg-gray-50 dark:bg-slate-900 text-slate-900 dark:text-gray-400 font-DanaMedium
         rounded-t-none 

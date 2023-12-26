@@ -21,18 +21,12 @@ const CustomizeItem = (({ title, items = [], name, onChangeHandler, mainValue })
                 `}>
                     {items.length !== 0 &&
                         items.map(item =>
-                            <div key={item.itemId} className="relative"
-                                onClick={() => {
-
-                                    console.log(mainValue)
-                                }}
-                            >
+                            <div key={item.itemId} className="relative"  >
                                 <input
                                     className='absolute opacity-0 invisible pointer-events-none'
                                     onChange={() => {
                                         setSelectedOption(item.value)
                                         onChangeHandler(item.value)
-                                        console.log(item, mainValue)
                                     }}
                                     disabled={
                                         (customizeContext.navigationType === "dual" && name === "horizental-navbar-shape") ||

@@ -13,7 +13,7 @@ export function localStorageChangeTheme() {
 export function localStorageChangeDirection() {
     // document.documentElement.classList.toggle('rtl')
 
-    console.log("dir", document.documentElement.dir)
+    // console.log("dir", document.documentElement.dir)
     if (document.documentElement.dir === "rtl") {
         localStorage.setItem('dir', "ltr")
         document.documentElement.dir = "ltr"
