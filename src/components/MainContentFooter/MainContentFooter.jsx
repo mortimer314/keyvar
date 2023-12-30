@@ -8,10 +8,10 @@ export default function MainContentFooter() {
           <div className="flex flex-wrap gap-x-2 justify-center ">
             <div className="text-center">
               Thank you from Phoenix and Themewagon | 2023 ©
-            </div>
+            
             <a target='_blank' className='text-blue-500 hover:text-blue-700 hover:underline' href="https://themewagon.com/">
               Themewagon
-            </a>
+            </a></div>
           </div>
           <div className="version">
             v.1.0.0
