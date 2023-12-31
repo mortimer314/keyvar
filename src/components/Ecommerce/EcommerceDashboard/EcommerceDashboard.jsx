@@ -52,8 +52,8 @@ export default function EcommerceDashboard() {
        
         <ChartBoxWraper>
           <ChartBoxHeader title={{fa:"مشتریان جدید",en:"New customers"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}} tolerancs={+26.5} mainValue={356}/>
-          {/* <ChartNewCustomersInLastWeek/> */}
-          <ChartTotalOrdersInLastWeek/>
+          <ChartNewCustomersInLastWeek/>
+
 
         </ChartBoxWraper>
        
