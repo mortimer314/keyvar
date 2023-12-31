@@ -5,6 +5,10 @@ import ChartOfTotalSells from './ChartOfTotalSells'
 import SectionSmallHeader from '../../GloballComponents/SectionSmallHeader'
 import ChartBoxWraper from './ChartBoxWraper'
 import ChartBoxHeader from './ChartBoxHeader'
+import ChartTotalOrdersInLastWeek from './ChartTotalOrdersInLastWeek'
+import ChartNewCustomersInLastWeek from './ChartNewCustomersInLastWeek'
+import CharPercenttPaying from './CharPercenttPaying'
+import ChartTopCoupons from './ChartTopCoupons'
 
 export default function EcommerceDashboard() {
   return (
@@ -43,18 +47,28 @@ export default function EcommerceDashboard() {
       <div className="chart-boxes grid grid-cols-2 gap-4 ">
         <ChartBoxWraper>
           <ChartBoxHeader title={{fa:"همه سفارش ها",en:"Total orders"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}} tolerancs={-6.8} mainValue={16247}/>
+          <ChartTotalOrdersInLastWeek/>
         </ChartBoxWraper>
        
         <ChartBoxWraper>
-          <ChartBoxHeader title={{fa:"همه سفارش ها",en:"Total orders"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}} tolerancs={-6.8} mainValue={16247}/>
+          <ChartBoxHeader title={{fa:"مشتریان جدید",en:"New customers"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}} tolerancs={+26.5} mainValue={356}/>
+          {/* <ChartNewCustomersInLastWeek/> */}
+          <ChartTotalOrdersInLastWeek/>
+
         </ChartBoxWraper>
        
         <ChartBoxWraper>
-          <ChartBoxHeader title={{fa:"همه سفارش ها",en:"Total orders"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}} tolerancs={-6.8} mainValue={16247}/>
+          <ChartBoxHeader title={{fa:"کوپن های برتر",en:"Top coupons"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}}  />
+          {/* <ChartTopCoupons/> */}
+          <ChartTotalOrdersInLastWeek/>
+
         </ChartBoxWraper>
        
         <ChartBoxWraper>
-          <ChartBoxHeader title={{fa:"همه سفارش ها",en:"Total orders"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}} tolerancs={-6.8} mainValue={16247}/>
+          <ChartBoxHeader title={{fa:'پرداخت در مقابل عدم پرداخت',en:"Paying vs non paying"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}} />
+          {/* <CharPercenttPaying/> */}
+          <ChartTotalOrdersInLastWeek/>
+
         </ChartBoxWraper>
        
       </div>

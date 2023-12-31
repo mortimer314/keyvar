@@ -8,7 +8,7 @@ const CustomTooltip = ({ payload, label, active }) => {
     return (
       <div className="tooltipStyle">
         {/* محتوای دلخواه خود را اینجا قرار دهید */}
-        <div className="w-30 h-14 flex flex-col ltr-dir p-2 text-xs justify-center gap-1 text-bold shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] dark:shadow-[0_0px_5px_2px_rgba(255,255,255,0.3)] text-gray-700 dark:text-slate-400 bg-white dark:bg-slate-800 rounded-md border border-solid border-gray-400/80 dark:border-slate-500 ">
+        <div className="w-30 h-14 flex flex-col ltr-dir p-2 text-xs justify-center gap-1 text-bold shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] dark:shadow-[0_0px_5px_2px_rgba(255,255,255,0.3)] text-gray-700 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 rounded-md border border-solid border-gray-400/80 dark:border-slate-500 ">
           {payload.map(item =>
             <div key={item.dataKey} className="flex items-center gap-x-2">
               <span className='w-2.5 h-2.5 rounded-full block' style={{ background: item.color }}></span>
