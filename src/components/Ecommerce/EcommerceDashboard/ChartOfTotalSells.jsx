@@ -132,7 +132,7 @@ const data = [
   },
   {
     name: '18',
-    May: 5500,
+    May: 8000,
     Apr: 2800,
     amt: 2700,
   },

@@ -80,7 +80,7 @@ export default function ChartNewCustomersInLastWeek() {
   return (
 
     <div className="flex-center">
-      <div className='relative w-[100%] h-[200px] '>
+      <div className='relative w-[105%] h-[200px] '>
 
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
@@ -88,17 +88,17 @@ export default function ChartNewCustomersInLastWeek() {
             height={280}
             data={data}
             margin={{
-              top: 20, 
+              top: 20, left: 5, right: 5
             }}
           >
             <XAxis dataKey="0" tickLine={false} />
             <Area dataKey="May" stroke="#8884cc" fill="transparent" strokeWidth={2} />
-            <Area dataKey="Apr" stroke="#00fff0"  fill="transparent" strokeWidth={2} strokeDasharray="2 4"  />
+            <Area dataKey="Apr" stroke="#00fff0" fill="transparent" strokeWidth={2} strokeDasharray="2 4" />
             <Tooltip content={<CustomTooltip />} cursor={{ stroke: 'gray', strokeWidth: 1 }} />
           </AreaChart>
         </ResponsiveContainer>
 
-        <div className="text-xs dark:text-gray-300 ltr-dir absolute bottom-0 right-0 left-0 m-auto w-full flex justify-between">
+        <div className="text-xs px-1 dark:text-gray-300 ltr-dir absolute bottom-0 right-0 left-0 m-auto w-full flex justify-between">
           <span>1 May</span>
           <span>7 May</span>
 
