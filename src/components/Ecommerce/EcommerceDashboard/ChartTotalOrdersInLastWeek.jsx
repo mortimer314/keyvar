@@ -59,7 +59,7 @@ const CustomTooltip = ({ payload, label, active }) => {
         <div className="w-28  flex flex-col ltr-dir px-2  justify-center gap-1  bg-slate-100 dark:bg-slate-800 shadow-[0_0px_10px_3px_rgba(0,0,0,0.3)] dark:shadow-[0_0px_5px_2px_rgba(255,255,255,0.3)] rounded-md border border-solid border-gray-400/80 dark:border-slate-500 ">
           {payload.map(item =>
             <div key={item.dataKey} className="flex items-center justify-between gap-x-2 whitespace-nowrap">
-              <span className='font-bold  text-gray-700 dark:text-slate-200'> {item.payload.name} {item.dataKey} :</span>
+              <span className='font-bold  text-gray-700 dark:text-slate-200/95'> {item.payload.name} {item.dataKey} :</span>
               <span className='text-sm text-gray-700 dark:text-slate-300'> {item.payload[item.dataKey]}</span>
             </div>
           )}

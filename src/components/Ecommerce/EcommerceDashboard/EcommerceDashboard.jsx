@@ -53,15 +53,11 @@ export default function EcommerceDashboard() {
         <ChartBoxWraper>
           <ChartBoxHeader title={{fa:"مشتریان جدید",en:"New customers"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}} tolerancs={+26.5} mainValue={356}/>
           <ChartNewCustomersInLastWeek/>
-
-
         </ChartBoxWraper>
        
         <ChartBoxWraper>
-          <ChartBoxHeader title={{fa:"کوپن های برتر",en:"Top coupons"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}}  />
-          {/* <ChartTopCoupons/> */}
-          <ChartTotalOrdersInLastWeek/>
-
+          <ChartBoxHeader title={{fa:"تخفیف های برتر",en:"Top coupons"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}}  />
+          <ChartTopCoupons/>
         </ChartBoxWraper>
        
         <ChartBoxWraper>
