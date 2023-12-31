@@ -44,7 +44,7 @@ export default function EcommerceDashboard() {
           </div>
         </div>
       </div>
-      <div className="chart-boxes grid grid-cols-2 gap-4 ">
+      <div className="chart-boxes grid grid-cols-1 md:grid-cols-2 gap-4 ">
         <ChartBoxWraper>
           <ChartBoxHeader title={{fa:"همه سفارش ها",en:"Total orders"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}} tolerancs={-6.8} mainValue={16247}/>
           <ChartTotalOrdersInLastWeek/>

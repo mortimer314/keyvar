@@ -118,7 +118,7 @@ export default function ChartTotalOrdersInLastWeek() {
      <div className="flex justify-between">
      {
         !isLanguageFa ?
-          <div className=" text-xs space-y-2">
+          <div className=" text-xs space-y-1">
             <div className="flex items-center gap-x-3 text-gray-600 dark:text-slate-400">
               <span className='block w-4 h-2 rounded-sm bg-blue-700 dark:bg-slate-400'></span>
               <span>Completed</span>
@@ -128,7 +128,7 @@ export default function ChartTotalOrdersInLastWeek() {
               <span>Pending payment</span>
             </div>
           </div> : 
-          <div className=" text-xs space-y-2">
+          <div className=" text-xs space-y-1">
           <div className="flex items-center gap-x-3 text-gray-600 dark:text-slate-400">
             <span className='block w-4 h-2 rounded-sm bg-blue-700 dark:bg-slate-400'></span>
             <span>تکمیل شده</span>
@@ -140,9 +140,9 @@ export default function ChartTotalOrdersInLastWeek() {
         </div>
       }
 
-      <div className="space-y-2 text-xs text-gray-600 dark:text-slate-400">
-        <h4 className='space-x-1 ltr-dir'>52 <span>%</span></h4>
-        <h4 className='space-x-1 ltr-dir'>48 <span>%</span></h4>
+      <div className=" text-[13px] font-medium text-gray-600 dark:text-slate-400">
+        <h4 className='space-x-0.5 ltr-dir'>52 <span>%</span></h4>
+        <h4 className='space-x-0.5 ltr-dir'>48 <span>%</span></h4>
       </div>
      </div>
 
