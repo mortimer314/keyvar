@@ -8,7 +8,7 @@ export default function Ecommerce() {
 
   return (
     <div className={isLnaguageFa ? 'font-Dana' : ''}>
-      <section>
+      <section className='border-b border-solid border-gray-400 dark:border-slate-600'>
         <EcommerceDashboard />
       </section>
     </div>
