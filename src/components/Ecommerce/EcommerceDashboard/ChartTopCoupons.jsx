@@ -48,7 +48,7 @@ export default function ChartTopCoupons() {
   return (
     <>
       <div className="relative h-[115px]">
-        <div className="flex-center z-10 absolute inset-0">
+        <div className="flex-center z-[1] absolute inset-0">
           <PieChart width={115} height={115} >
             <Pie
               data={isLanguageFa ? dataFa : data}
@@ -68,7 +68,9 @@ export default function ChartTopCoupons() {
           </PieChart>
 
         </div>
-        <div className=" absolute z-0 w-fit m-auto left-[45%] xs:left-[47%] md:left-[45%] top-[39%]  ltr-dir text-gray-800 dark:text-slate-300 text-2xl font-medium ">72%</div>
+        <div className=" absolute z-0 w-fit m-auto left-[45%] xs:left-[47%] md:left-[45%] top-[39%]  ltr-dir text-gray-800 dark:text-slate-300 text-2xl font-medium ">
+          72%
+        </div>
 
       </div>
 
