@@ -63,7 +63,6 @@ export default function EcommerceDashboard() {
         <ChartBoxWraper>
           <ChartBoxHeader title={{fa:'پرداخت در مقابل عدم پرداخت',en:"Paying vs non paying"}} subtitle={{fa:"هفته اخیر",en:"Last 7 days"}} />
           <CharPercenttPaying/>
-
         </ChartBoxWraper>
        
       </div>

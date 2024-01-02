@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import EcommerceDashboard from './EcommerceDashboard/EcommerceDashboard'
 import CustomizeContext from '../../context/costomizeContext'
+import EcommerceLatestReviews from './EcommerceLatestReviews/EcommerceLatestReviews'
 
 export default function Ecommerce() {
   const { language } = useContext(CustomizeContext)
@@ -10,6 +11,10 @@ export default function Ecommerce() {
     <div className={isLnaguageFa ? 'font-Dana' : ''}>
       <section className='border-b border-solid border-gray-400 dark:border-slate-600'>
         <EcommerceDashboard />
+      </section>
+
+      <section>
+        <EcommerceLatestReviews/>
       </section>
     </div>
   )
