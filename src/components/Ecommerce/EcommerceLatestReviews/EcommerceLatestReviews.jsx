@@ -29,7 +29,7 @@ export default function DataGridProDemo() {
         },
     });
     return (
-        <div className='p-6 lg:p-8'>
+        <div className='p-6 lg:p-8 bg-gray-50  dark:bg-slate-900 '>
 
             <div className="flex justify-between pb-8">
                 <SectionSmallHeader

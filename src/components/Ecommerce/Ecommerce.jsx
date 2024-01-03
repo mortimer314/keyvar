@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import EcommerceDashboard from './EcommerceDashboard/EcommerceDashboard'
 import CustomizeContext from '../../context/costomizeContext'
 import EcommerceLatestReviews from './EcommerceLatestReviews/EcommerceLatestReviews'
+import TopRegions from './EcommerceTopRegions/TopRegions'
+
 
 export default function Ecommerce() {
   const { language } = useContext(CustomizeContext)
@@ -15,6 +17,10 @@ export default function Ecommerce() {
 
       <section>
         <EcommerceLatestReviews/>
+      </section>
+
+      <section>
+        <TopRegions/> 
       </section>
     </div>
   )
