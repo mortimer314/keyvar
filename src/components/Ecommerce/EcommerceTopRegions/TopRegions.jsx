@@ -21,7 +21,7 @@ export default function TopRegions() {
                     <ChartTopRegions />
                 </div>
             </div>
-            <div className="overflow-hidden h-[300px] xlg:h-full">
+            <div className="overflow-hidden h-[300px] xl:h-full">
                 { isLanguageFa ? <PersionMapTopRegion /> : <MapTopRegions /> }
             </div>
         </div>
