@@ -41,7 +41,7 @@ const COLORS = ['#0088FE', '#334155'];
 // const COLORSDARK = ['#0088FE','#cecece' ];
 
 export default function CharPercenttPaying() {
-  const { language, dark } = useContext(CustomizeContext)
+  const { language } = useContext(CustomizeContext)
 
   const isLanguageFa = language === "fa"
 

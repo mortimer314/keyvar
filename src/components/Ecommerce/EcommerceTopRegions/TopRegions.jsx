@@ -11,7 +11,7 @@ export default function TopRegions() {
     const isLanguageFa = language === "fa"
 
     return (
-        <div className='grid grid-cols-1 xl:grid-cols-2 xl:h-[560px] xl:overflow-hidden bg-slate-100 dark:bg-slate-950 border-t border-solid border-gray-400 dark:border-slate-600'>
+        <div className='grid grid-cols-1 xl:grid-cols-2 xl:h-[560px] xl:overflow-hidden bg-slate-100 dark:bg-slate-950 border-y border-solid border-gray-400 dark:border-slate-600'>
             <div className="p-6 lg:p-8">
                 <div className="pb-8">
                     <SectionSmallHeader title={{ en: "Top regions by revenue", fa: "مناطق برتر از نظر درآمد" }} subtitle={{ en: 'Where you generated most of the revenue', fa: "جایی که بیشترین درآمد را کسب کردید." }} />
