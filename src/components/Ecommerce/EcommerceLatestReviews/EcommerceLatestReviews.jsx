@@ -53,7 +53,7 @@ export default function DataGridProDemo() {
                 </div>
             </div>
             {isLanguageFa ?
-                <span className='text-red-600 pb-1 block'>نمودار  به لایسنس نیاز دارد، لطفا زبان سایت را از قسمت شخصی سازی به انگلیسی تغییر دهید.</span>
+                <span className='text-red-600 pb-1 block'>جدول به لایسنس نیاز دارد، لطفا زبان سایت را از قسمت شخصی سازی به انگلیسی تغییر دهید.</span>
                 : ""
             }
             <ThemeProvider theme={DARK_MODE_THEME}>

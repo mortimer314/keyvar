@@ -134,6 +134,7 @@ const ChartActualEarnings = () => {
               left: 0,
               bottom: 5,
             }}
+            
           >
             <CartesianGrid strokeDasharray="3 0" vertical={false} />
             <XAxis dataKey="name" tickLine={false} />
