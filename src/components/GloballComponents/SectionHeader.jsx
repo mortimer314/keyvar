@@ -10,12 +10,12 @@ export default function SectionHeader({ title, subtitle }) {
     <>
       {
         !isLnaguageFa ? <div className='space-y-2'>
-          <div className="text-gray-800/95 dark:text-white text-2xl lg:text-3xl font-bold">{title.en}</div>
-          <div className="text-gray-600 dark:text-gray-300 text-sm lg:text-base ">{subtitle.en}</div>
+          <div className="text-gray-800/95 dark:text-slate-50 text-2xl lg:text-3xl font-bold">{title.en}</div>
+          {subtitle ? <div className="text-gray-600 dark:text-gray-300 text-sm lg:text-base ">{subtitle.en}</div> : ''}
         </div> :
           <div className='space-y-3'>
-            <div className="text-gray-800/95 dark:text-white text-2xl lg:text-3xl font-bold">{title.fa}</div>
-            <div className="text-gray-600 dark:text-gray-300 text-sm lg:text-base ">{subtitle.fa}</div>
+            <div className="text-gray-800/95 dark:text-slate-50 text-2xl lg:text-3xl font-bold">{title.fa}</div>
+            {subtitle ? <div className="text-gray-600 dark:text-gray-300 text-sm lg:text-base ">{subtitle.fa}</div> : ''}
           </div>
       }
     </>

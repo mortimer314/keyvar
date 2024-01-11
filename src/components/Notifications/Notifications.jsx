@@ -1,100 +1,15 @@
 import React from 'react'
+import NotificationHeader from './NotificationHeader'
+import NotificationSection from './NotificationSection'
 
+const notificationsData = [0,0,0,0]
+const yesterdayNotifications = [0,0,0,0,0,0]
 export default function Notifications() {
   return (
     <div className='notifications h-full'>
-      <div className="">
-
-        notifications
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </div>
+        <NotificationHeader/>
+        <NotificationSection title={{en:"Today",fa:"امروز"}} notifications={notificationsData}/>
+        <NotificationSection title={{en:"Yesterday",fa:"دیروز"}} notifications={yesterdayNotifications}/>
 
     </div>
   )
