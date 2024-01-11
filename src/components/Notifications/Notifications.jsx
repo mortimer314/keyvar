@@ -8,6 +8,7 @@ export default function Notifications() {
   return (
     <div className='notifications h-full'>
         <NotificationHeader/>
+        
         <NotificationSection title={{en:"Today",fa:"امروز"}} notifications={notificationsData}/>
         <NotificationSection title={{en:"Yesterday",fa:"دیروز"}} notifications={yesterdayNotifications}/>
 
