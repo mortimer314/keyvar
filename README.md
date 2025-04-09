@@ -5,7 +5,7 @@
 
 
 <p align="center" >
-<a  href="https://greenshop.liara.run/">
+<a  href="https://mortimer314.github.io/keyvar">
 keyvar demo لینک دمو سایت 
 </a>
 </p>
@@ -46,8 +46,10 @@ keyvar demo لینک دمو سایت
 
  #### پکیج های استفاده شده
 
-- 🖥️  tailwind
-- 🌍  swiper
-- ✉️  react icon
+- 🖥️  React JS
+- 🌍  Leaflet
+- ✉️  Recharts
+- 🍕  Tailwind CSS
+- 🍔  MUI
 
 
