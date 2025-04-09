@@ -1,11 +1,53 @@
 لینک دمو سایت
+# پنل ادمین با قابلیت شخصی سازی پیشرفته و انواع منو و ساید بار
+<br>
+<br>
 
 
-[keyvar demo لینک دمو سایت](https://mortimer314.github.io/keyvar/#)
+<p align="center" >
+<a  href="https://greenshop.liara.run/">
+keyvar demo لینک دمو سایت 
+</a>
+</p>
+<br>
+<hr>
+<br>
+ <br/>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### صفحه اول
+ <hr/>
+ <br/>
+<p>
+ <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+ <img src="https://raw.githubusercontent.com/mortimer314/keyvar/refs/heads/main/public/readme/1%20(1).png"  alt="MongoDB" />
+ </a>
+</p>
+<br>
+<hr>
+<br>
+ <br/>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+### سایدبار شخصی سازی
+ <hr/>
+ <br/>
+<p>
+ <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+ <img src="https://raw.githubusercontent.com/mortimer314/keyvar/refs/heads/main/public/readme/2.png"  alt="MongoDB" />
+ </a>
+</p>
+<br>
+<hr>
+<br>
+ <br/>
+
+
+
+ #### پکیج های استفاده شده
+
+- 🖥️  tailwind
+- 🌍  swiper
+- ✉️  react icon
+
+
